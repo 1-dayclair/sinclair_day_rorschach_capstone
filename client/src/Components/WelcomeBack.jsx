@@ -21,7 +21,7 @@ export default function WelcomeBack() {
         try {
             console.log("Data in transit...", person);
 
-            const response = await fetch("https://global-circular.onrender.com/users/home", {
+            const response = await fetch("https://interglobal-circular.onrender.com/users/home", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
