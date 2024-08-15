@@ -52,10 +52,10 @@ router
 
     });
 
-// router
-//     .route("/data")
-//     .get((req, res) => {
-//         res.json(userData)
-//     });
+router
+    .route("/data")
+    .get((req, res) => {
+        res.json(userData)
+    });
 
 module.exports = router; 

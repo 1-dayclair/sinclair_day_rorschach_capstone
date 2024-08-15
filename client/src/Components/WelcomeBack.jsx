@@ -21,7 +21,7 @@ export default function WelcomeBack() {
         try {
             console.log("Data in transit...", person);
 
-            const response = await fetch("http://localhost:4000/users/home", {
+            const response = await fetch("https://global-circular.onrender.com/users/home", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -40,7 +40,7 @@ export default function WelcomeBack() {
 
             if (json.token) {
                 localStorage.setItem("token", json.token);
-                navigate("/home");
+                navigate("/circular");
             } else {
                 alert(json.error); 
             }

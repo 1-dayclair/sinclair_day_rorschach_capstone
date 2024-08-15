@@ -29,6 +29,22 @@ router
         //     res.status(500).json({ error: "SERVER ERROR" });
         }
 
+    }); 
+
+router 
+    .route("/delete/:email")
+    .delete(async (req, res) => {
+        const deleteOne = req.params.id;
+
+        try {
+            const vanish = await newUserModel.findByIdAndDelete(deleteOne);
+
+            if(!vanish) {
+                return res.status(404).json({error: "There is no user with that data to delete"});
+            }
+        } catch (error) {
+            res.status(500).json({ message: "There has been an error deleting your information from the database, please try again."});
+        }
     });
 
 module.exports = router;

@@ -7,15 +7,15 @@ export default function Rorschach() {
     const navigate = useNavigate();
 
     // useEffect handles the token/ authenticates the user
-    useEffect(() => {
-        const token = localStorage.getItem("token");
+    // useEffect(() => {
+    //     const token = localStorage.getItem("token");
 
-        console.log("Here's a secret", token)
-        if(!token) {
-            navigate("/welcome");
-            console.log("Secret passed along successfully.")
-        }
-    }, [navigate]);
+    //     console.log("Here's a secret", token)
+    //     if(!token) {
+    //         navigate("/welcome");
+    //         console.log("Secret passed along successfully.")
+    //     }
+    // }, [navigate]);
     // Navigate redirects user to login page if login information isn't valid^^
 
 
@@ -25,6 +25,14 @@ export default function Rorschach() {
             <div id="top">
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
+                <div className="sexy">
+                    <img className="couple" src="../media/economy.jpeg" alt="An image of a couple"/>
+
+                </div>
+
+
+
+
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
                     <form action="opinions/soapbox" method="post">
@@ -51,12 +59,12 @@ export default function Rorschach() {
                         <button type="submit">Share</button>
                     </form>
                 </div>
-                <div className="adjust">
+                {/* <div className="adjust">
                     <p className="libre-barcode-39-regular" id="voice">
                         <em><b>!!!EXTRA EXTRA!!!</b></em> READ, READ, <b>READ!!!</b> It's all very super serious to be/
                         LOOK!! It's fascinating, this fascination, a dominant <em><b>force</b></em> to be ON TOP!!
                     </p>
-                </div>
+                </div> */}
                 <div id="hebrew">
                     <img id="first" src="../media/hebrew.jpg" alt="An image of the Hebrew symbol" />
                     <img id="second" src="../media/christianity.jpg" alt="An image of the Christian cross" />
