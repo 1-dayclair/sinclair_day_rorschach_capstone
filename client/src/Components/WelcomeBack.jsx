@@ -33,7 +33,7 @@ export default function WelcomeBack() {
 
             const response = await axios ({
                 // url: "https://interglobal-circular.onrender.com/users/home", 
-                url: "http://localhost:4000/users/home",
+                url: "https://interglobal-circular.onrender.com/users/home",
                 method: "POST", 
                 data: person
             });
@@ -46,8 +46,10 @@ export default function WelcomeBack() {
                 throw new Error("Data lost in transit...");
             }
 
-            const json = await response.json();
-            console.log(json);
+            // const json = await response.json();
+            const vending = await response.data
+
+            // console.log(json);
 
             if (json.token) {
                 localStorage.setItem("token", json.token);
