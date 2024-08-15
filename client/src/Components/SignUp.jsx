@@ -23,7 +23,7 @@ export default function SignUp() {
         try {
 
             const response = await axios ({
-                url: "https://global-circular.onrender.com/create/newuser",
+                url: "https://interglobal-circular.onrender.com/create/newuser",
                 method: "POST",
                 data: newUser
             })

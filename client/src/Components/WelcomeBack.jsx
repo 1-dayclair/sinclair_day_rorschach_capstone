@@ -33,7 +33,7 @@ export default function WelcomeBack() {
 
             const response = await axios ({
                 // url: "https://interglobal-circular.onrender.com/users/home", 
-                url: "https://global-circular.onrender.com/users/home",
+                url: "https://interglobal-circular.onrender.com/users/home",
                 method: "POST", 
                 data: person
             });
