@@ -1,6 +1,6 @@
 import App from "../App";
 import "../styles/signUp.css";
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
 
 export default function SignUp() {
@@ -22,24 +22,24 @@ export default function SignUp() {
         e.preventDefault();
         try {
 
-            const response = await axios ({
-                url: "https://interglobal-circular.onrender.com/create/newuser",
-                method: "POST",
-                data: newUser
-            })
-
-            console.log(response);
-            // const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            // const response = await axios ({
+            //     url: "https://interglobal-circular.onrender.com/create/newuser",
             //     method: "POST",
-            //     headers: {
-            //         "Content-Type": 'application/json'
-            //     },
-            //     body: JSON.stringify(newUser)
+            //     data: newUser
             // });
 
-            const timing = await response.data
+            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+                method: "POST",
+                headers: {
+                    "Content-Type": 'application/json'
+                },
+                body: JSON.stringify(newUser)
+            });
 
-            if (response.status !== 201) {
+            const timing = await response.json();
+            // console.log("The data says:", timing);
+
+            if (!response.ok) {
                 alert(timing.error);
             } else {
                 alert(timing.message);
