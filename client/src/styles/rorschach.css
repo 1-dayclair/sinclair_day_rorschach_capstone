@@ -149,7 +149,7 @@
     width: 302px;
     height: 85px;
     position: relative;
-    left: 1000px;
+    left: 100px;
 }
 
 .will4 {
@@ -164,7 +164,8 @@
     width: 302px;
     height: 85px;
     position: relative;
-    bottom: 300px;
+    bottom: 200px;
+    left: 125px;
 
 }
 
@@ -188,4 +189,26 @@
 .will {
     position: relative;
     bottom: 140px;
+}
+
+.couple {
+    height: 200px;
+    width: 250px;
+}
+.surprise {
+    height: 200px;
+    width: 250px;
+}
+
+.power {
+    position: relative;
+    bottom: 82px;
+}
+
+.theatre {
+    white-space: nowrap;
+}
+
+.ticket {
+    display: inline-block;
 }

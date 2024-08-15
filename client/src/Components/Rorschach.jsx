@@ -25,13 +25,57 @@ export default function Rorschach() {
             <div id="top">
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+                
+                <div className="theatre">
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (1).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (2).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (1).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (2).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (1).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (2).mp4" type="video/mp4" />
+                    </video>
+                </div>
+                
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+                
                 <div className="sexy">
-                    <img className="couple" src="../media/economy.jpeg" alt="An image of a couple"/>
+                    {/* <img className="couple" src="../media/economy.jpeg" alt="An image of a couple"/> */}
+                    <img className="power" src="../media/text-1723724505281.png" alt="An image of the word `POWER`" />
+                    <img className="surprise" src="../media/surprise.jpg" alt="A couple having fun" />
 
                 </div>
-
-
-
 
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>

@@ -1,5 +1,6 @@
 import App from "../App";
 import "../styles/signUp.css";
+import axios from "axios";
 import { useState } from "react";
 
 export default function SignUp() {
@@ -20,17 +21,25 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+
+            const response = await axios ({
+                url: "http://localhost:4000/create/newuser",
                 method: "POST",
-                headers: {
-                    "Content-Type": 'application/json'
-                },
-                body: JSON.stringify(newUser)
-            });
+                data: newUser
+            })
 
-            const timing = await response.json();
+            console.log(response);
+            // const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": 'application/json'
+            //     },
+            //     body: JSON.stringify(newUser)
+            // });
 
-            if (!response.ok) {
+            const timing = await response.data
+
+            if (response.status !== 201) {
                 alert(timing.error);
             } else {
                 alert(timing.message);
