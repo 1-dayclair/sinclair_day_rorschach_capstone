@@ -2,19 +2,19 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt"); 
 const jwt = require("jsonwebtoken");
-const newUserModel = require("../model/create");
-const userData = require("../data/users");
+const userModel = require("../model/users");
+
 
 router
-    .route("/webtraveller")
+    .route("/home")
     .post(async (req, res) => {
-
-        // const { username, password } = req.body;
 
         try {
             const { username, password } = req.body;
 
-            const user = await newUserModel.findOne({ username });
+            console.log("Data has arrived :)", {username, password});
+
+            const user = await userModel.findOne({username});
 
             console.log("Quality Request!");
             
@@ -27,9 +27,14 @@ router
                 return res.status(400).json({ error: "Username and/or password does not match our database, please try again!" });
             }
 
-            const secret = jwt.sign({ id: user._id },
+            const token = jwt.sign({ id: user._id },
                 process.env.JWT_SECRET, { expiresIn: "2h" });
-            res.json({ secret, message: "User now has access!" });
+            
+            const noEncryption = jwt.verify(token, process.env.JWT_SECRET);
+                if (user._id.toString() === noEncryption.id) {
+                    console.log("There's a match in our database!");
+                }
+            return res.status(200).json({ token, message: "User now has access!" });
 
             // Did Not work
             // if (user && user.password === password) {
@@ -47,10 +52,10 @@ router
 
     });
 
-router
-    .route("/data")
-    .get((req, res) => {
-        res.json(userData)
-    });
+// router
+//     .route("/data")
+//     .get((req, res) => {
+//         res.json(userData)
+//     });
 
 module.exports = router; 

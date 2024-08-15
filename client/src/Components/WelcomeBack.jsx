@@ -1,3 +1,4 @@
+import App from "../App";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/welcomeBack.css";
@@ -18,7 +19,9 @@ export default function WelcomeBack() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/users/webtraveller", {
+            console.log("Data in transit...", person);
+
+            const response = await fetch("http://localhost:4000/users/home", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -26,96 +29,95 @@ export default function WelcomeBack() {
                 body: JSON.stringify(person)
             });
 
-            const bugResearch = response.headers.get("content-type");
+            // const bugResearch = response.headers.get("content-type");
 
             if (!response.ok) {
-                if (bugResearch && bugResearch.includes("application/json")) {
-                    const trouble = await response.json();
-                    alert(trouble.error);
-                }
-            } else {
-                if (bugResearch && bugResearch.includes("application/json")) {
-                    const strike = await response.json();
-                    localStorage.setItem("secret", strike.secret);
-                    navigate("/home");
-                } else {
-                    const approve = await response.text();
-                }
+                throw new Error("Data lost in transit...");
             }
 
-            // const strike = await response.json();
+            const json = await response.json();
+            console.log(json);
 
-            // if(!response.ok) {
-            //     const trouble = await response.json();
-            //     alert(trouble.error);
-            // } else {
-            //     const strike = await response.json();
-            //     localStorage.setItem("secret", strike.secret);
-            //     navigate("/home");
-            // }
-        } catch (error) {
-            console.error("ERROR", error);
-        }
+            if (json.token) {
+                localStorage.setItem("token", json.token);
+                navigate("/home");
+            } else {
+                alert(json.error); 
+            }
+
+    // const strike = await response.json();
+
+    // if(!response.ok) {
+    //     const trouble = await response.json();
+    //     alert(trouble.error);
+    // } else {
+    //     const strike = await response.json();
+    //     localStorage.setItem("secret", strike.secret);
+    //     navigate("/home");
+    // }
+} catch (error) {
+    console.error("ERROR", error);
+}
     };
 
-    return (
-        <>
-            <div className="spinal">
-                <div id="enter">
-                    <form id="login" onSubmit={handleSubmit} method="POST">
-                        <input type="text" name="username" placeholder="username" value={person.username} onChange={handleChange} required />
-                        <input type="password" name="password" placeholder="password" value={person.password} onChange={handleChange} required />
-                        <button id="submit" type="submit">Enter!</button>
-                    </form>
-                </div>
-
-                <div id="movement">
-
-                    <img id="fashion" src="../media/fabric.gif" alt="An image of moving fabric" />
-
-                </div>
-
-
-                <div id="page">
-                    <p id="book">
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!  Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
-                        Circular Circular! Circular! 
-                    </p>
-                </div>
+return (
+    <>
+        <div className="spinal">
+            <div id="enter">
+                <form id="login" onSubmit={handleSubmit} method="POST">
+                    <input type="text" name="username" placeholder="username" value={person.username} onChange={handleChange} required />
+                    <input type="password" name="password" placeholder="password" value={person.password} onChange={handleChange} required />
+                    <button id="submit" type="submit">Enter!</button>
+                </form>
             </div>
-        </>
-    );
+
+            <div id="movement">
+
+                <img id="fashion" src="../media/fabric.gif" alt="An image of moving fabric" />
+
+            </div>
+
+
+            <div id="page">
+                <p id="book">
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!  Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular! Circular!
+                    Circular Circular! Circular!
+                </p>
+            </div>
+        </div>
+    </>
+);
 };

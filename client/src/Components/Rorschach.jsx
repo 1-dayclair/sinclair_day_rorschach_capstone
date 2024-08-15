@@ -1,6 +1,6 @@
 import App from "../App";
 import { useEffect } from "react";
-import { useNavigate } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/rorschach.css";
 
 export default function Rorschach() {
@@ -8,9 +8,12 @@ export default function Rorschach() {
 
     // useEffect handles the token/ authenticates the user
     useEffect(() => {
-        const secret = localStorage.getItem("secret");
-        if(!secret) {
+        const token = localStorage.getItem("token");
+
+        console.log("Here's a secret", token)
+        if(!token) {
             navigate("/welcome");
+            console.log("Secret passed along successfully.")
         }
     }, [navigate]);
     // Navigate redirects user to login page if login information isn't valid^^

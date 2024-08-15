@@ -12,6 +12,7 @@ router
 
             await newUser.save(); 
             res.status(201).json({message: `New User @ ${newUser}`})
+            
             // const newUser = new newUserModel({
             //     email: req.body.email,
             //     username: req.body.username,

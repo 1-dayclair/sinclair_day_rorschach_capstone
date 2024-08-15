@@ -1,3 +1,4 @@
+import App from "../App";
 import "../styles/signUp.css";
 import { useState } from "react";
 
@@ -19,7 +20,7 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            const response = await fetch("http://localhost:4000/create/newuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": 'application/json'
@@ -61,11 +62,6 @@ export default function SignUp() {
                 </div>
                 <div id="circular2">
                     <p>Circular! Circular!Circular!Circular!</p>
-                </div>
-                <div id="circular3">
-                    <p style={{ color: "crimson" }}>
-                        Circular! Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!Circular!
-                    </p>
                 </div>
             </div>
         </>

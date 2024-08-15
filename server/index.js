@@ -15,6 +15,7 @@ const PORT = 4000;
 
 
 const app = express();
+app.use(express.json());
 
 // Middleware 
 app.use(cors());
@@ -33,7 +34,11 @@ app.use("/create", create);
 // app.use("/users", users);
 const comments = require("./routes/comments");
 app.use("/comments", comments);
+
+const users = require("./routes/users");
+app.use("/users", users)
 // Routes^^
+
 
 // Views
 app.set("view engine", "ejs");

@@ -18,7 +18,7 @@ export default function Start() {
                             <button className="signUp">Sign Up!</button>
                             {/* </a> */}
                         </Link>
-                    <Link to="/welcome">
+                        <Link to="/welcome">
                             {/* <a href="/welcome"> */}
                             <button className="login">Login!</button>
                             {/* </a> */}
