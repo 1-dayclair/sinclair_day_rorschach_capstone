@@ -25,8 +25,8 @@ router
 
         } catch (error) {
             res.status(500).json({error: "There has been a server error, we are working on it, now!"});
-        //     console.error("ERRor!!", error);
-        //     res.status(500).json({ error: "SERVER ERROR" });
+            console.error("ERRor!!", error);
+            res.status(500).json({ error: "SERVER ERROR" });
         }
 
     }); 
