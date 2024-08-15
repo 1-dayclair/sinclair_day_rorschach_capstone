@@ -1,0 +1,37 @@
+.spinal {
+    background-color:darkmagenta;
+}
+
+#enter {
+    border: 1rem ridge silver;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    background-color: green;
+    color: aliceblue;
+}
+
+#submit:hover {
+    transform: translateY(-3px);
+}
+
+#movement {
+    display: flex;
+    justify-content: center;
+}
+
+#fashion {
+    height: 125px;
+    width: 100px;
+}
+
+p {
+    color: lavenderblush;
+}
+
+
+
+
+

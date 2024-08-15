@@ -1,0 +1,40 @@
+.foundation {
+    background-color: black;
+}
+
+.cradle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#intro {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color:fuchsia;
+}
+
+.signUp {
+    background-color: yellow;    
+}
+.signUp:hover {
+    background-color:darkseagreen;
+    border: dotted cornsilk;
+    color: rgb(120, 47, 5);
+}
+
+.login {
+    background-color: lightblue;
+    border: dotted orange;
+}
+
+.login:hover {
+    transform: translateY(-3px);
+    background-color: linen;
+    color: rgb(26, 101, 89);
+}
+
+#brick {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,36 @@
+html, body {
+    border: dotted deepskyblue 2px;
+    background-color: rgba(214, 208, 200, 0.989);
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#go {
+    background-color: green;
+    color: aliceblue;
+}
+
+#go:hover {
+    transform: translateY(-3px);
+}
+
+#structureTwice {
+    height: 100px;
+    width: 315px;
+    position: relative;
+    left: 91px; bottom: 54px;
+}
+
+#circular {
+    writing-mode: vertical-rl;
+    text-orientation: vertical;
+}
+
+#last {
+    display: flex;
+    justify-content: space-around;
+}
