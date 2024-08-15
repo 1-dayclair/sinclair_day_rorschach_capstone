@@ -16,7 +16,7 @@ router
 
             const user = await userModel.findOne({username});
 
-            console.log("Quality Request!");
+            console.log(user);
             
             if (!user) {
                 return res.status(400).json({ error: "Username and/or password does not match our database, please try again!" });
