@@ -1,3 +1,5 @@
+***Currently being updated***
+
 This application is an online, public, Circular, rorschach. 
 A circular is a letter or advertisement for distribution to a large number of people. 
 Dictionary.com says a rorschach test is a psychological test in which a subject's interpretations of a series of inkblots are analyzed as an indication of personality traits, preoccupations, and conflicts.
