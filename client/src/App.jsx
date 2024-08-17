@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
 
-    const [search, setSearch] = useState("");
+    // const [search, setSearch] = useState("");
 
     // useEffect(() => {
     //     fetch("/create/data")
