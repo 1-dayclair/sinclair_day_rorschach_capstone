@@ -1,4 +1,3 @@
-import App from "../App";
 import "../styles/signUp.css";
 import { useState } from "react";
 
@@ -20,7 +19,7 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            const response = await fetch("https://global-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": 'application/json'
@@ -29,7 +28,6 @@ export default function SignUp() {
             });
 
             const timing = await response.json();
-            // console.log("The data says:", timing);
 
             if (!response.ok) {
                 alert(timing.error);
@@ -41,6 +39,7 @@ export default function SignUp() {
             console.error("ERROR", error);
         }
     };
+
 
     return (
         <>
