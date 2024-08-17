@@ -18,7 +18,7 @@ export default function WelcomeBack() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch("https://global-circular.onrender.com/create/webtraveller", {
+            const response = await fetch("https://interglobal-circular.onrender.com/create/webtraveller", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
