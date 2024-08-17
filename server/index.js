@@ -67,6 +67,12 @@ app.get("/welcome", (req, res) => {
 });
 // Login^^
 
+// Public Circular
+app.get("/circular", (req, res) => {
+    res.render("rorschach.ejs");
+    console.log("Client is active on Public Circular!");
+});
+// Public Circular^^
 
 // 404 Middleware
 app.use((req, res, next) => {
