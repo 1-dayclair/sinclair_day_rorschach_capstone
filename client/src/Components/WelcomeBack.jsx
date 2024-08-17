@@ -1,7 +1,6 @@
 import App from "../App";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import axios from "axios";
 import "../styles/welcomeBack.css";
 
 
@@ -23,20 +22,13 @@ export default function WelcomeBack() {
         try {
             console.log("Data in transit...", person);
 
-            const response = await fetch("https://interglobal-circular.onrender.com/users/home", {
+            const response = await fetch("https://interglobal-circular.onrender.com/users/webtraveller", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(person)
             });
-
-            // const response = await axios ({
-            //     // url: "https://interglobal-circular.onrender.com/users/home", 
-            //     url: "https://interglobal-circular.onrender.com/users/home",
-            //     method: "POST", 
-            //     data: person
-            // });
 
             console.log(response);
 

@@ -6,7 +6,7 @@ const userModel = require("../model/users");
 
 
 router
-    .route("/home")
+    .route("/webtraveller")
     .post(async (req, res) => {
 
         try {
@@ -16,7 +16,7 @@ router
 
             const user = await userModel.findOne({username});
 
-            console.log(user);
+            // console.log(user);
             
             if (!user) {
                 return res.status(400).json({ error: "Username and/or password does not match our database, please try again!" });

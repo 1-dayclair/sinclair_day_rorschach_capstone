@@ -1,6 +1,5 @@
 import App from "../App";
 import "../styles/signUp.css";
-// import axios from "axios";
 import { useState } from "react";
 
 export default function SignUp() {
@@ -21,13 +20,6 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-
-            // const response = await axios ({
-            //     url: "https://interglobal-circular.onrender.com/create/newuser",
-            //     method: "POST",
-            //     data: newUser
-            // });
-
             const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
