@@ -1,4 +1,5 @@
 ***This application is currently undergoing updates***
+***Currently being updated***
 
 This application is an online, public, Circular, rorschach. 
 A circular is a letter or advertisement for distribution to a large number of people. 
