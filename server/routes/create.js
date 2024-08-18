@@ -9,6 +9,10 @@ router
 
         const { email, username, password } = req.body;
 
+        if (!email || !username || !password) {
+            return res.status(400).json({error: "There is a rquired field that's missing from your entry"});
+        }
+
         try {
 
             const salt = await bcrypt.genSalt(10);

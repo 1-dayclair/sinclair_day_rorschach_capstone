@@ -1,5 +1,5 @@
-import "../styles/signUp.css";
 import { useState } from "react";
+import "../styles/signUp.css";
 
 export default function SignUp() {
     const [newUser, setNewUser] = useState({
@@ -19,7 +19,7 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            const response = await fetch("https://global-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": 'application/json'
@@ -27,6 +27,7 @@ export default function SignUp() {
                 body: JSON.stringify(newUser)
             });
 
+            console.log(response.status);
             const timing = await response.json();
 
             if (!response.ok) {
