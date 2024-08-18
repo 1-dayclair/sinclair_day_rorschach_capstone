@@ -1,11 +1,10 @@
+import App from "../App";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/welcomeBack.css";
 
 export default function WelcomeBack() {
 
     const [person, setPerson] = useState({ username: "", password: "" });
-    const navigate = useNavigate();
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -18,13 +17,22 @@ export default function WelcomeBack() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch("https://localhost:4000/users/webtraveller", {
+            const response = await fetch("https://interglobal-circular.onrender.com/users/webtraveller", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(person)
             });
+
+            const entrance = await response.json(); 
+
+            if(!response.ok) {
+                alert(entrance.error);
+            } else {
+                alert(entrance.message); 
+                window.location.href ="/circular"; 
+            }
         } catch (error) {
             console.error("ERROR", error);
         }

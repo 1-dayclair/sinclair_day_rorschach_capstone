@@ -1,4 +1,3 @@
-import App from "../App";
 import "../styles/signUp.css";
 import { useState } from "react";
 

@@ -11,23 +11,6 @@ import './App.css'
 
 function App() {
 
-    // const [search, setSearch] = useState("");
-
-    // useEffect(() => {
-    //     fetch("/create/data")
-    //         .then(response => {
-    //             if (!response.ok) {
-    //                 throw new Error("There was a problem accessing the route...");
-    //             } return response.json();
-    //         })
-    //         .then(data => {
-    //             setSearch(data.text)
-    //             console.log(data.text);
-    //         })
-    //         .catch(error => console.error("ERROR", error));
-    // }, []);
-
-
     return (
         <>
             <Routes>
