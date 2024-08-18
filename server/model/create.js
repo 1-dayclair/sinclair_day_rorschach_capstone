@@ -12,10 +12,9 @@ const createSchema = new Schema({
         required: true,
         unique: true
     },
-    password: {
+    hashPassword: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     }
 });
 

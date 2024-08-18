@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+
 const cors = require("cors"); 
 
 // Connection
@@ -19,8 +20,8 @@ app.use(express.json());
 
 // Middleware 
 app.use(cors());
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 // Middleware^^
 
 // Routes
@@ -45,6 +46,8 @@ app.set("view engine", "ejs");
 app.use("/public", express.static("public"));
 app.use("/public/media", express.static("./public"));
 // Views^^
+
+
 
 // Start
 app.get("/", (req, res) => {

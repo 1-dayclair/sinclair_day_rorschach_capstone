@@ -13,16 +13,16 @@ export default function Start() {
                         </p>
                     </div>
                     <div className="buttons">
+                        
                         <Link to="/quick">
-                            {/* <a href="/quick"> */}
                             <button className="signUp">Sign Up!</button>
-                            {/* </a> */}
+
                         </Link>
+
                         <Link to="/welcome">
-                            {/* <a href="/welcome"> */}
                             <button className="login">Login!</button>
-                            {/* </a> */}
                         </Link>
+
                     </div>
                     <div className="flashingLights">
                         <img src="../media/famous!.gif " alt="An image of flashing lights from cameras" />
