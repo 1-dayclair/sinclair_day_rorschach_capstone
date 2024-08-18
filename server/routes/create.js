@@ -9,10 +9,6 @@ router
 
         const { email, username, password } = req.body;
 
-        if (!email || !username || !password) {
-            return res.status(400).json({error: "There is a rquired field that's missing from your entry"});
-        }
-
         try {
 
             const salt = await bcrypt.genSalt(10);
@@ -21,7 +17,7 @@ router
             console.log(salt);
             console.log(hashPassword);
 
-            const newUser = new newUserModel({ email, username, hashPassword });
+            const newUser = new newUserModel({ email, username, password: hashPassword });
 
             await newUser.save();
             res.status(201).json({ message: `New User @ ${newUser}` })
