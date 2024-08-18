@@ -18,8 +18,13 @@ const PORT = 4000;
 const app = express();
 app.use(express.json());
 
+app.use(cors({
+    origin: "https://global-circular.onrender.com", 
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+}));
+
 // Middleware 
-app.use(cors());
 app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 // Middleware^^

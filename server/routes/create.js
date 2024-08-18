@@ -17,7 +17,7 @@ router
             console.log(salt);
             console.log(hashPassword);
 
-            const newUser = new newUserModel({ email, username, password: hashPassword });
+            const newUser = new newUserModel({ email, username, hashPassword });
 
             await newUser.save();
             res.status(201).json({ message: `New User @ ${newUser}` })
