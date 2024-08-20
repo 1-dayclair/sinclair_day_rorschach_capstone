@@ -63,14 +63,14 @@ app.get("/", async (req, res) => {
 // Start^^
 
 // Sign Up
-app.get("/quick", (req, res) => {
+app.get("/newuser", (req, res) => {
     res.render("signUp.ejs");
     console.log("Potential Beautiful Movement!")
 });
 // Sign Up^^
 
 // Login
-app.get("/welcome", (req, res) => {
+app.get("/webtraveller", (req, res) => {
     res.render("login.ejs");
     console.log("Lovely. (In A Vaccum!)");
 });

@@ -34,7 +34,7 @@ export default function SignUp() {
                 alert(timing.error);
             } else {
                 alert(timing.message);
-                window.location.href = "/welcome";
+                window.location.href = "/webtraveller";
             }
         } catch (error) {
             console.error("ERROR", error);
