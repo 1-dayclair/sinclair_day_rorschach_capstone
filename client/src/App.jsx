@@ -16,8 +16,8 @@ function App() {
             <Routes>
 
                 <Route path="/" element={<Start />} />
-                <Route path="/quick" element={<SignUp />} />
-                <Route path="/welcome" element={<WelcomeBack />} />
+                <Route path="/newuser" element={<SignUp />} />
+                <Route path="/webtraveller" element={<WelcomeBack />} />
                 <Route path="/circular" element={<Rorschach />} />
 
             </Routes>

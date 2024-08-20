@@ -21,7 +21,8 @@ app.use(express.json());
 app.use(cors({
     origin: "https://global-circular.onrender.com", 
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"]
+    allowedHeaders: ["Content-Type"],
+    credentials: true,
 }));
 
 // Middleware 
@@ -55,7 +56,7 @@ app.use("/public/media", express.static("./public"));
 
 
 // Start
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
     res.render("start.ejs", { text: "Start!" });
     console.log("Start!")
 });
