@@ -1,6 +1,4 @@
 import App from "../App"; 
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/rorschach.css";
 
 export default function Rorschach() {
