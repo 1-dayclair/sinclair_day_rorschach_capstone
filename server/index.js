@@ -18,11 +18,6 @@ const PORT = 4000;
 const app = express();
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "build")));
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-
 app.use(cors({
     origin: "https://global-circular.onrender.com", 
     methods: ["GET", "POST"],
@@ -50,6 +45,12 @@ app.use("/comments", comments);
 const users = require("./routes/users");
 app.use("/users", users)
 // Routes^^
+
+app.use(express.static(path.join(__dirname, "build")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 
 // Views
