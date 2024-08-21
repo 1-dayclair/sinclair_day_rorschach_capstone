@@ -1,4 +1,3 @@
-import App from "../App"; 
 import "../styles/rorschach.css";
 
 export default function Rorschach() {

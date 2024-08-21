@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Start from './Components/Start';
@@ -16,8 +14,8 @@ function App() {
             <Routes>
 
                 <Route path="/" element={<Start />} />
-                <Route path="/newuser" element={<SignUp />} />
-                <Route path="/webtraveller" element={<WelcomeBack />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<WelcomeBack />} />
                 <Route path="/circular" element={<Rorschach />} />
 
             </Routes>
