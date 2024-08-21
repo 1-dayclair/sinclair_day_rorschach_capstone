@@ -37,8 +37,7 @@ const createModel = require("./model/create");
 
 const create = require("./routes/create");
 app.use("/create", create);
-// const users = require("./routes/users");
-// app.use("/users", users);
+
 const comments = require("./routes/comments");
 app.use("/comments", comments);
 

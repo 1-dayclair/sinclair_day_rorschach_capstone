@@ -4,7 +4,7 @@ const newUserModel = require("../model/create");
 const bcrypt = require("bcrypt");
 
 router
-    .route("/newuser")
+    .route("create/newuser")
     .post(async (req, res) => {
 
         const { email, username, password } = req.body;

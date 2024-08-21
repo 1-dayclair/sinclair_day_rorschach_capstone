@@ -4,7 +4,7 @@ const userModel = require("../model/users");
 const bcrypt = require("bcrypt");
 
 router
-    .route("/webtraveller")
+    .route("users/webtraveller")
     .post(async (req, res) => {
 
         const { username, password } = req.body;
