@@ -13,12 +13,12 @@ export default function Start() {
                     </div>
                     <div className="buttons">
                         
-                        <Link to="create/newuser">
+                        <Link to="/newuser">
                             <button className="signUp">Sign Up!</button>
 
                         </Link>
 
-                        <Link to="users/webtraveller">
+                        <Link to="/webtraveller">
                             <button className="login">Login!</button>
                         </Link>
 
