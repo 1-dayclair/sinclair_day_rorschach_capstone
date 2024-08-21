@@ -1,4 +1,3 @@
-import App from "../App";
 import { useState } from "react";
 import "../styles/welcomeBack.css";
 
@@ -17,7 +16,7 @@ export default function WelcomeBack() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/users/webtraveller", {
+            const response = await fetch("https://interglobal-circular.onrender.com/webtraveller", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
