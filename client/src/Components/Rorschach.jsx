@@ -4,20 +4,6 @@ import { useNavigate } from "react-router-dom";
 import "../styles/rorschach.css";
 
 export default function Rorschach() {
-    const navigate = useNavigate();
-
-    // useEffect handles the token/ authenticates the user
-    // useEffect(() => {
-    //     const token = localStorage.getItem("token");
-
-    //     console.log("Here's a secret", token)
-    //     if(!token) {
-    //         navigate("/welcome");
-    //         console.log("Secret passed along successfully.")
-    //     }
-    // }, [navigate]);
-    // Navigate redirects user to login page if login information isn't valid^^
-
 
 
     return (
@@ -25,6 +11,20 @@ export default function Rorschach() {
             <div id="top">
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
+
+                <div>
+                    <pre>
+                    <p>MORALLY STRATEGIC, JEAN MICHELE BASQIAUT &  RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
+
+                        MARJELLY IS A #FAST-PACED MET. !!!ACTIVELY SCOURING AROUND FOR COMPANY SECRETS!!! BIG
+                            BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
+                HIS SON'S NAME'S IMMACULATE...THERE'S A PIMP AND HIS H@%, "BABY, YOU GOTTA WATCH OUT FOR THAT OPEN-HAND, 
+                                    ---***BLAOWWW!!!!***--- HOOK!" #ART-WORLD FETISH-MONGERERS, BEWARE!! 
+                                    I REPEAT!! CANNABALIZE YOUR LANDLORD!! AND YOUR DELI MAN!! THEY MAKE MONEY 
+                        EXPENSIVE? ROMANCE OF TAXES!! PARASITES IN HIS FISH!!!
+                    </p>
+                    </pre>
+                </div>
 
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
