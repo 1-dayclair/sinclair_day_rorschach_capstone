@@ -54,39 +54,39 @@ app.get("*", (req, res) => {
 
 
 // Views
-app.set("view engine", "ejs");
-app.use("/public", express.static("public"));
-app.use("/public/media", express.static("./public"));
+// app.set("view engine", "ejs");
+// app.use("/public", express.static("public"));
+// app.use("/public/media", express.static("./public"));
 // Views^^
 
 
 
 // Start
-app.get("/", async (req, res) => {
-    res.render("start.ejs", { text: "Start!" });
-    console.log("Start!")
-});
+// app.get("/", async (req, res) => {
+//     res.render("start.ejs", { text: "Start!" });
+//     console.log("Start!")
+// });
 // Start^^
 
 // Sign Up
-app.get("/newuser", (req, res) => {
-    res.render("signUp.ejs");
-    console.log("Potential Beautiful Movement!")
-});
+// app.get("/newuser", (req, res) => {
+//     res.render("signUp.ejs");
+//     console.log("Potential Beautiful Movement!")
+// });
 // Sign Up^^
 
 // Login
-app.get("/webtraveller", (req, res) => {
-    res.render("login.ejs");
-    console.log("Lovely. (In A Vaccum!)");
-});
+// app.get("/webtraveller", (req, res) => {
+//     res.render("login.ejs");
+//     console.log("Lovely. (In A Vaccum!)");
+// });
 // Login^^
 
 // Public Circular
-app.get("/circular", (req, res) => {
-    res.render("rorschach.ejs");
-    console.log("Client is active on Public Circular!");
-});
+// app.get("/circular", (req, res) => {
+//     res.render("rorschach.ejs");
+//     console.log("Client is active on Public Circular!");
+// });
 // Public Circular^^
 
 // 404 Middleware
