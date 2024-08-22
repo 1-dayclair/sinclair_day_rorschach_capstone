@@ -19,7 +19,7 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com/", {
+            const response = await fetch("https://global-circular.onrender.com/", {
                 method: "POST",
                 headers: {
                     "Content-Type": 'application/json'
