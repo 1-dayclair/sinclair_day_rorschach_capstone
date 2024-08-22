@@ -11,7 +11,7 @@ const PORT = 4000;
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://global-circular.onrender.com", 
+    origin: "https://interglobal-circular.onrender.com", 
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
