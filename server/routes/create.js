@@ -9,6 +9,8 @@ router
 
         const { email, username, password } = req.body;
 
+        console.log(req.body);
+
         try {
 
             const salt = await bcrypt.genSalt(10);
@@ -27,7 +29,7 @@ router
             if (error.code === 11000) {
                 res.status(400).json({ error: "The email and/or username you've entered already exists inside our database. Please enter another username and/or email address or continue to the login page." })
             } else {
-                res.status(500).json({ error: "There has been a server error, we are working on it now!" });
+                res.status(500).json({ error: "There has been a server error. We are working on it now!" });
             }
         }
 

@@ -2,25 +2,17 @@ const express = require("express");
 require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const path =require("path"); 
-
+const path = require("path"); 
 const cors = require("cors"); 
 
-// Connection
-main().catch(err => console.log(err));
-
-async function main() {
-    await mongoose.connect(process.env.ATLAS_URI)
-};
-const PORT = 4000;
-// Connection^^
-
 const app = express();
+const PORT = 4000;
+
 app.use(express.json());
 
 app.use(cors({
     origin: "https://global-circular.onrender.com", 
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
 }));
@@ -30,10 +22,26 @@ app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 // Middleware^^
 
+// Connection
+async function main() {
+    try {
+    await mongoose.connect(process.env.ATLAS_URI );
+    
+    console.log("Database active!");
+
+    } catch (err) {
+        
+        console.log("Database is not active..");
+    }
+};
+
+main().catch(err => console.log(err));
+// Connection^^
+
 // Routes
-const  userModel = require("./model/users");
-const commentsModel = require("./model/comments");
-const createModel = require("./model/create"); 
+// const  userModel = require("./model/users");
+// const commentsModel = require("./model/comments");
+// const createModel = require("./model/create"); 
 
 const create = require("./routes/create");
 app.use("/create", create);

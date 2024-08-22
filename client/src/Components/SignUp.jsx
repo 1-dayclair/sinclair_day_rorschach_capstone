@@ -28,13 +28,14 @@ export default function SignUp() {
             });
 
             console.log(response.status);
+            
             const timing = await response.json();
 
             if (!response.ok) {
                 alert(timing.error);
             } else {
                 alert(timing.message);
-                window.location.href = "/webtraveller";
+                window.location.href = "/login";
             }
         } catch (error) {
             console.error("ERROR", error);
