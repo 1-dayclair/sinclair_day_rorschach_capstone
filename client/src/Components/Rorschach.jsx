@@ -13,13 +13,14 @@ export default function Rorschach() {
                     <pre>
                     <p>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
 
-                        MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING AROUND FOR COMPANY SECRETS!!! BIG
+                        MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING COMPANY LOGS FOR SECRETS!!! BIG
                             BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
                 HIS SON'S NAME'S IMMACULATE...THERE'S A PIMP AND HIS H@%, "BABY, YOU GOTTA WATCH OUT FOR THAT OPEN-HAND, 
                                     ---***BLAOWWW!!!!***--- HOOK!" #ART-WORLD FETISH-MONGERERS, BEWARE!! 
                                     I REPEAT!! CANNABALIZE YOUR LANDLORD!! AND YOUR DELI MAN!! THEY MAKE MONEY 
                         EXPENSIVE? ROMANCE OF TAXES!! PARASITES IN HIS FISH!!! PARASITES IN HIS SUPER FISH, PARASITES IN 
-                                        HIS SUPERFICIAL, SUPERFICIAL, SUPERFICIAL SUPREMACY!! 
+                                        HIS SUPERFICIAL, SUPERFICIAL, SUPERFICIAL SUPREMACY!! PLEASURE FOREVER, PLEASURE 4EVER 
+                                TODAY'S BUDDHA MAN. GIVE ME A SECOND TO DOWNLOAD MY EGO...  
                     </p>
                     </pre>
                 </div>

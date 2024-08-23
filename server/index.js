@@ -55,10 +55,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-app.get("/signup", (req, res) => {
-    res.send("Welcome to your Circular @Rorschach. Please sign up or login");
-});
-
 // 404 Middleware
 app.use((req, res, next) => {
     next(new Error(404, "Resource Not Found"));

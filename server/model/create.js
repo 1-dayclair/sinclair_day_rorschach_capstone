@@ -5,14 +5,17 @@ const createSchema = new Schema({
     email: {
         type: String,
         required: true,
+        unique: true,
     },
     username: {
         type: String,
         required: true,
+        unique: true,
     },
     hashPassword: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     }
 });
 

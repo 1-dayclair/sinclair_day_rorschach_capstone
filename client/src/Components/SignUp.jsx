@@ -26,7 +26,7 @@ export default function SignUp() {
                 throw new Error("Some requirements are missing here...");
             } 
 
-            const response = await fetch("https://interglobal-circular.onrender.com", {
+            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
