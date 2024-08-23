@@ -10,7 +10,7 @@ router
         const { username, password } = req.body;
 
         const user = await userModel.findOne({username});
-            if(user == null) {
+            if(user === null) {
                 return res.status(400).json("Cannot find user");
             }
             console.log("Data has arrived :)", {username, password});

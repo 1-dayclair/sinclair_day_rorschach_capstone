@@ -39,10 +39,6 @@ main().catch(err => console.log(err));
 // Connection^^
 
 // Routes
-// const  userModel = require("./model/users");
-// const commentsModel = require("./model/comments");
-// const createModel = require("./model/create"); 
-
 const create = require("./routes/create");
 app.use("/create", create);
 
@@ -57,6 +53,10 @@ app.use(express.static(path.join(__dirname, "build")));
 
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+app.get("/signup", (req, res) => {
+    res.send("Welcome to your Circular @Rorschach. Please sign up or login");
 });
 
 // 404 Middleware

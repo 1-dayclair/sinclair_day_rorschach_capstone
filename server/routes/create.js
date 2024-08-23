@@ -22,7 +22,7 @@ router
             const newUser = new newUserModel({ email, username, hashPassword });
 
             await newUser.save();
-            res.status(201).json({ message: `New User @ ${newUser}` })
+            res.status(201).json({ message: `New User @ ${newUser}` });
 
         } catch (error) {
             console.log(error);

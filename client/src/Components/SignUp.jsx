@@ -19,7 +19,10 @@ export default function SignUp() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://interglobal-circular.onrender.com", {
+
+            console.log("Data in transit :)");
+
+            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": 'application/json'
