@@ -20,13 +20,13 @@ export default function SignUp() {
         e.preventDefault();
         try {
 
-            console.log("Data in transit :)");
+            console.log("Data in transit :)", newUser);
 
             if (!newUser || !newUser.username || !newUser.email) {
                 throw new Error("Some requirements are missing here...");
             } 
 
-            const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
+            const response = await fetch("https://interglobal-circular.onrender.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
