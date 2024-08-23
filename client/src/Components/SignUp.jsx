@@ -22,6 +22,10 @@ export default function SignUp() {
 
             console.log("Data in transit :)");
 
+            if (!newUser || !newUser.username || !newUser.email) {
+                throw new Error("Some requirements are missing here...");
+            } 
+
             const response = await fetch("https://interglobal-circular.onrender.com/create/newuser", {
                 method: "POST",
                 headers: {
