@@ -29,7 +29,8 @@ router
 
         } catch (error) {
 
-            console.log(error);
+            console.log(error)
+            
             // if (error.code === 11000) {
             //     res.status(400).json({ error: "The email and/or username you've entered already exists inside our database. Please enter another username and/or email address or continue to the login page." })
             // } else {
