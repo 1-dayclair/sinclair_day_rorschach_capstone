@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/signUp.css";
 
 export default function SignUp() {
@@ -7,6 +8,8 @@ export default function SignUp() {
         username: "",
         password: "",
     });
+
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -42,7 +45,7 @@ export default function SignUp() {
                 alert(timing.error);
             } else {
                 alert(timing.message);
-                window.location.href = "/login";
+                navigate("/login");
             }
         } catch (error) {
             console.error("ERROR", error);

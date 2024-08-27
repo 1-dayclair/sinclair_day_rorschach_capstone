@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/welcomeBack.css";
 
 export default function WelcomeBack() {
@@ -12,6 +13,8 @@ export default function WelcomeBack() {
             [name]: value
         }));
     }
+
+    const navigate = useNavigate();
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -30,7 +33,7 @@ export default function WelcomeBack() {
                 alert(entrance.error);
             } else {
                 alert(entrance.message); 
-                window.location.href ="/circular"; 
+                navigate("/circular"); 
             }
         } catch (error) {
             console.error("ERROR", error);
