@@ -39,7 +39,7 @@ export default function Rorschach() {
                 
                 <div className="theatre">
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
-                        <source src="../media/Video (1).mp4" type="video/mp4" />
+                        <source src="../public/media/Video (1).mp4" type="video/mp4" />
                     </video>
 
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
