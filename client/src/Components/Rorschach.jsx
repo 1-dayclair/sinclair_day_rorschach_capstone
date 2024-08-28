@@ -11,7 +11,7 @@ export default function Rorschach() {
 
                 <div>
                     <pre>
-                    <p>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
+                    <p style={{display: "inline", color: "blue" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
 
                         MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING COMPANY LOGS FOR SECRETS!!! BIG
                             BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
@@ -23,7 +23,8 @@ export default function Rorschach() {
                                 TODAY'S BUDDHA MAN. GIVE ME A SECOND TO DOWNLOAD MY EGO... YOUR EGO IS CONNECTED SIRE. 
                     THERE'S A LARGE LAAARGE MAJOR CRIME SYNDICATE AT LARGE AND THEY ARE MASTERS OF PROFESSIONALISM 
                                 ALL HE HAS IS HIS SENSES, AND ALONG WITH HIS SENTIMENT, BOOM!! HE'S POSSESSED BY ONE
-                                                OF THE WILLS THAT COLLECTS RECONNAISSANCE AGAINST THE FORTRE$$ ;)   
+                                                OF THE WILLS THAT COLLECTS RECONNAISSANCE AGAINST THE FORTRE$$ ;) STAY TUNED FOR HIS NEXT
+                                    SHOW @WHATHAVEYOUHEARDABOUTME?   
                     </p>
                     </pre>
                 </div>
