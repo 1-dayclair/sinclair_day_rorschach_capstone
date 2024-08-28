@@ -1,4 +1,5 @@
 import "../styles/rorschach.css";
+import MediaQuery from "react-responsive"; 
 
 export default function Rorschach() {
 
@@ -11,7 +12,7 @@ export default function Rorschach() {
 
                 <div>
                     <pre>
-                    <p style={{display: "inline", color: "blue", whiteSpace: "nowrap" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
+                    <p style={{display: "inline", color: "blue", fontSize: "30px", fontWeight: "bold" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
 
                         MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING COMPANY LOGS FOR SECRETS!!! BIG
                             BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
@@ -39,13 +40,7 @@ export default function Rorschach() {
                 </div>
                 
                 <div className="theatre">
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
-                        <source src="../public/media/Video (1).mp4" type="video/mp4" />
-                    </video>
-
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
-                        <source src="../media/Video (2).mp4" type="video/mp4" />
-                    </video>
+                
 
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (1).mp4" type="video/mp4" />
@@ -62,6 +57,16 @@ export default function Rorschach() {
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (1).mp4" type="video/mp4" />
+                    </video>
+
+                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Video (2).mp4" type="video/mp4" />
+                    </video>
+
+                
                 </div>
                 
                 <div className="pieceOfMind">
@@ -78,6 +83,19 @@ export default function Rorschach() {
                     <img className="power" src="../media/text-1723724505281.png" alt="An image of the word `POWER`" />
                     <img className="surprise" src="../media/surprise.jpg" alt="A couple having fun" />
 
+                </div>
+
+                <div className="sexxy">
+                    <img className="surprise2" src="../media/man1.jpg" alt="A man presenting the word `POWER`" />
+                    <img className="power2" src="../media/text-1723641526421.png" alt="An image of the word `POWER`" />
+                    
+                    <img className="power3" src="../media/text-1723724602743.png" alt="An image of the word `POWER`" /> 
+                    <img className="surprise3" src="../media/lady.jpg" alt="A woman looking up towards the word `POWER`" />
+                </div>
+
+                <div className="sexxxy">
+                    <img className="power4" src="../media/text-1724215874600.png" alt="The words `MAXIMUM PROFIT` as an image"/>
+                    <img className="surprise4" src="../media/man.jpg" alt="A man points up with his finger, excitedly"/>
                 </div>
 
                 <div className="pieceOfMind">

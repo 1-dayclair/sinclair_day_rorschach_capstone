@@ -1,3 +1,5 @@
+
+
 #top {
     background-color: yellow;
 }
@@ -203,6 +205,55 @@
 .power {
     position: relative;
     bottom: 82px;
+}
+
+.surprise2 {
+    height: 300px;
+    width: 450px;
+    border: dotted magenta 7px;
+}
+
+.power2 {
+    position: relative;
+    right: 500px;
+    bottom: 95px;
+    height: 175px;
+}
+
+.surprise3 {
+    height: 500px;
+    width: 575px;
+    border: 7px solid seagreen;
+}
+
+.power3 {
+    position: relative;
+    bottom: 455px;
+    left: 315px;
+    width: 450px;
+}
+
+.sexy {
+    display: flexbox;
+}
+
+.sexxy {
+    display: flexbox;
+}
+
+.sexxxy {
+    display: flexbox;
+}
+
+.surprise4 {
+    width: 350px;
+    border: dotted 9px darkslategray; 
+}
+
+.power4 {
+    position: relative;
+    bottom: 37px;
+    width: 100%;
 }
 
 .theatre {
