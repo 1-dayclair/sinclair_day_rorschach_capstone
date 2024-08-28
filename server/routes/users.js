@@ -11,13 +11,13 @@ router
 
         const user = await userModel.findOne({username});
             if(user === null) {
-                return res.status(400).json("Cannot find user");
+                return res.status(400).json({error: "Cannot find user"});
             }
             console.log("Data has arrived :)", {username, hashPassword});
 
         try {
 
-            if (await bcrypt.compare(req.body.password, user.hashPassword)) {
+            if (await bcrypt.compare(req.body.hashPassword, user.hashPassword)) {
                 res.status(200).json({message: `Welcome @ ${user}`})
             } else {
                 res.send("You are not authorized for that action.")
