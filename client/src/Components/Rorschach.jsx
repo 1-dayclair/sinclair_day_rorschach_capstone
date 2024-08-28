@@ -11,7 +11,7 @@ export default function Rorschach() {
 
                 <div>
                     <pre>
-                    <p style={{display: "inline", color: "blue" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
+                    <p style={{display: "inline", color: "blue", whiteSpace: "nowrap" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
 
                         MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING COMPANY LOGS FOR SECRETS!!! BIG
                             BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
