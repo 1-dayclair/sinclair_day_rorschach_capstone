@@ -7,17 +7,17 @@ router
     .route("/webtraveller")
     .post(async (req, res) => {
 
-        const { username, password } = req.body;
+        const { username, hashPassword } = req.body;
 
         const user = await userModel.findOne({username});
             if(user === null) {
                 return res.status(400).json("Cannot find user");
             }
-            console.log("Data has arrived :)", {username, password});
+            console.log("Data has arrived :)", {username, hashPassword});
 
         try {
 
-            if (await bcrypt.compare(req.body.password, user.password)) {
+            if (await bcrypt.compare(req.body.password, user.hashPassword)) {
                 res.status(200).json({message: `Welcome @ ${user}`})
             } else {
                 res.send("You are not authorized for that action.")

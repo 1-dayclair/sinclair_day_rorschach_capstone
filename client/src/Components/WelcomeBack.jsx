@@ -4,7 +4,7 @@ import "../styles/welcomeBack.css";
 
 export default function WelcomeBack() {
 
-    const [person, setPerson] = useState({ username: "", password: "" });
+    const [person, setPerson] = useState({ username: "", hashPassword: "" });
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -46,7 +46,7 @@ export default function WelcomeBack() {
                 <div id="enter">
                     <form id="login" onSubmit={handleSubmit} method="POST">
                         <input type="text" name="username" placeholder="username" value={person.username} onChange={handleChange} required />
-                        <input type="password" name="password" placeholder="password" value={person.password} onChange={handleChange} required />
+                        <input type="password" name="hashPassword" placeholder="password" value={person.hashPassword} onChange={handleChange} required />
                         <button id="submit" type="submit">Enter!</button>
                     </form>
                 </div>
