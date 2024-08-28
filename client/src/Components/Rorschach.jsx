@@ -20,7 +20,10 @@ export default function Rorschach() {
                                     I REPEAT!! CANNABALIZE YOUR LANDLORD!! AND YOUR DELI MAN!! THEY MAKE MONEY 
                         EXPENSIVE? ROMANCE OF TAXES!! PARASITES IN HIS FISH!!! PARASITES IN HIS SUPER FISH, PARASITES IN 
                                         HIS SUPERFICIAL, SUPERFICIAL, SUPERFICIAL SUPREMACY!! PLEASURE FOREVER, PLEASURE 4EVER 
-                                TODAY'S BUDDHA MAN. GIVE ME A SECOND TO DOWNLOAD MY EGO...  
+                                TODAY'S BUDDHA MAN. GIVE ME A SECOND TO DOWNLOAD MY EGO... YOUR EGO IS CONNECTED SIRE. 
+                    THERE'S A LARGE LAAARGE MAJOR CRIME SYNDICATE AT LARGE AND THEY ARE MASTERS OF PROFESSIONALISM 
+                                ALL HE HAS IS HIS SENSES, AND ALONG WITH HIS SENTIMENT, BOOM!! HE'S POSSESSED BY ONE
+                                                OF THE WILLS THAT COLLECTS RECONNAISSANCE AGAINST THE FORTRE$$ ;)   
                     </p>
                     </pre>
                 </div>
