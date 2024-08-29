@@ -76,9 +76,47 @@ export default function Rorschach() {
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
 
+                </div>
 
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
 
-                
+                <div> 
+
+                    <a>
+                        <img className="celeb" src="../media/text-1724971226247.png" alt="The word `CELEBRITIES`"/>
+                        <img className="before" src="../media/text-1724971238624.png" alt="The word `BEFORE`" />
+                        <img className="christ" src="../media/text-1724971251250.png" alt="The word `CHRIST`"/>
+                    </a>
+
+                </div>
+
+                <div className="heaven">
+
+                    <img className="spy" src="../media/watch-two.png" alt="An image of a surveillance camera" />
+                    <img className="misr" src="../media/sphinx.png" alt="An image of the Sphinx" />
+
+                </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+
+                <div className="hammer">
+
+                    <img className="confidence" src="../media/burning-bridge.png" alt="An image of a burning bridge" /> 
+                    <img className="" src="" alt="" />
                 </div>
                 
                 <div className="pieceOfMind">

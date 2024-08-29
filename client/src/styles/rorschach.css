@@ -277,3 +277,19 @@
     background-color: maroon;
 }
 
+.spy {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    bottom: 650px;
+    right: 175px;
+}
+
+.misr {
+    height: 700px;
+    width: 750px;
+}
+
+.confidence {
+    border: solid 4px black;
+}
