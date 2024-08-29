@@ -3,6 +3,13 @@ import MediaQuery from "react-responsive";
 
 export default function Rorschach() {
 
+    const pac = new Audio("../media/Untitled video - Made with Clipchamp (1).mp4");
+
+    const handlePlay = () =>  {
+
+        pac.play(); 
+    };
+
 
     return (
         <>
@@ -38,10 +45,13 @@ export default function Rorschach() {
                         <button type="submit">Share</button>
                     </form>
                 </div>
+
+                <div className="backBone">
+                    <button className="american" onClick={handlePlay}>Click Me for a Surprise!</button>
+                </div>
                 
                 <div className="theatre">
                 
-
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (1).mp4" type="video/mp4" />
                     </video>
@@ -65,6 +75,8 @@ export default function Rorschach() {
                     <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
+
+
 
                 
                 </div>
