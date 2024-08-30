@@ -1,6 +1,6 @@
 ***This application is always undergoing updates***
 
-***Due to the nature of our host, please give the system some time when signing up and/or logging into the application. Our webtravellers are working dilligently to feed your input into the database***
+***Due to the nature of our host, please give the system some time when signing up and/or logging into the application. Our webtravellers are working diligently to feed your input into the database***
 
 ***Currently being updated***
 
