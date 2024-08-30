@@ -89,7 +89,7 @@ export default function Rorschach() {
 
                 <div> 
 
-                    <a>
+                    <a href="../media/Zoom to Fading Supernova in NGC 2525.mp4" target="_blank">
                         <img className="celeb" src="../media/text-1724971226247.png" alt="The word `CELEBRITIES`"/>
                         <img className="before" src="../media/text-1724971238624.png" alt="The word `BEFORE`" />
                         <img className="christ" src="../media/text-1724971251250.png" alt="The word `CHRIST`"/>
@@ -115,8 +115,9 @@ export default function Rorschach() {
 
                 <div className="hammer">
 
+                    <img className="newYork" src="../media/newyork,newyork.jpg" alt="An photograph of a beautiful woman" />
                     <img className="confidence" src="../media/burning-bridge.png" alt="An image of a burning bridge" /> 
-                    <img className="" src="" alt="" />
+                    <img className="adut" src="../media/adut.jpg" alt="A photograph of beautiful woman" />
                 </div>
                 
                 <div className="pieceOfMind">
@@ -156,6 +157,22 @@ export default function Rorschach() {
                         <button type="submit">Share</button>
                     </form>
                 </div>
+
+                <div> 
+
+                    <img className="together" src="../media/economy.jpeg" alt="An image of a person making a heart with their hands" />
+                    <img className="fence" src="../media/white-fence.png" alt="An image of a white pickett fence" />
+
+                </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
                 <div className="fortresses">
                     <img className="pov" src="../media/fortress-3.png" alt="The word, 'fortress', written in graffiti" />
                     <img className="pov2" src="../media/fortress-4.png" alt="The word, 'fortress', written in graffiti" />
@@ -166,6 +183,42 @@ export default function Rorschach() {
                     <img className="will4" src="../media/will-graffiti.png" alt="The word, 'will', written in graffiti" />
                     <img className="will5" src="../media/will-graffiti.png" alt="The word, 'will', written in graffiti" />
                 </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="Stand atop your soapbox..." />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+
+                <div>
+
+                    <img className="stop" src="../media/text-1724885907102.png" alt="The phrase, `STOP WORK`" />
+                    <img className="work" src="../media/text-1724885922384.png" alt="The phrase, `STOP WORK`" />
+                    {/* <img className="stop2" src="../media/text-1724885938722.png" alt="The phrase, `STOP WORK`" />  */}
+                    
+                    <video className="dentist" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Untitled video - Made with Clipchamp (2).mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+
+                <div>
+
+                    <img className="work2" src="../media/text-1724883600666.png" alt="The phrase, `STOP WORK`" />
+
+                </div>
+
+                <div>
+
+                <video className="dentist" width="195" height="365" controls={false} autoPlay loop muted>
+                        <source src="../media/Untitled video - Made with Clipchamp.mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+                
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
                     <form action="opinions/soapbox" method="post">

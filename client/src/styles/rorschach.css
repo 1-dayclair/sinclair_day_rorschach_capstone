@@ -293,3 +293,38 @@
 .confidence {
     border: solid 4px black;
 }
+
+.adut {
+    border: dashed 5px palevioletred;
+    height: 215px;
+    width: 175px;
+}
+
+.newYork {
+    border: 7px dashed springgreen;
+    width: 215px;
+}
+
+.together {
+    width: 100%;
+    height: 75%;
+}
+
+.fence {
+    width: 100%;
+    height: 242px;
+    position: relative;
+    bottom: 367px;
+}
+
+.stop {
+    width: 100%;
+}
+
+.work {
+    width: 90%;
+}
+
+.work2 {
+    width: 25%;
+}
