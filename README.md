@@ -1,4 +1,7 @@
-***This application is currently undergoing updates***
+***This application is always undergoing updates***
+
+***Due to the nature of our host, please give the system some time when signing up and/or logging into the application. Our webtravellers are working dilligently to feed your input into the database***
+
 ***Currently being updated***
 
 This application is an online, public, Circular, rorschach. 
