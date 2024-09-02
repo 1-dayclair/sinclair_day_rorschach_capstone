@@ -50,29 +50,29 @@ export default function Rorschach() {
                     <button className="american" onClick={handlePlay}>Click Me for a Surprise!</button>
                 </div>
                 
-                <div className="theatre">
+                <div className="theatre">    
                 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket1" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (1).mp4" type="video/mp4" />
                     </video>
 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket2" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket3" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (1).mp4" type="video/mp4" />
                     </video>
 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket4" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket5" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (1).mp4" type="video/mp4" />
                     </video>
 
-                    <video className="ticket" width="195" height="365" controls={false} autoPlay loop muted>
+                    <video className="ticket6" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Video (2).mp4" type="video/mp4" />
                     </video>
 
@@ -87,7 +87,7 @@ export default function Rorschach() {
                     </form>
                 </div>
 
-                <div> 
+                <div className="bc"> 
 
                     <a href="../media/Zoom to Fading Supernova in NGC 2525.mp4" target="_blank">
                         <img className="celeb" src="../media/text-1724971226247.png" alt="The word `CELEBRITIES`"/>
@@ -97,10 +97,19 @@ export default function Rorschach() {
 
                 </div>
 
-                <div className="heaven">
+                <div className="security">
 
-                    <img className="spy" src="../media/watch-two.png" alt="An image of a surveillance camera" />
-                    <img className="misr" src="../media/sphinx.png" alt="An image of the Sphinx" />
+                    <div className="security2">
+                        <img className="spy" src="../media/watch-two.png" alt="An image of a surveillance camera" />
+                    </div>
+
+                    <div className="heaven">
+
+                    <a href="../media/image0.jpeg">
+                        <img className="misr" src="../media/sphinx.png" alt="An image of the Sphinx" />
+                    </a>
+
+                    </div>
 
                 </div>
 
@@ -116,8 +125,8 @@ export default function Rorschach() {
                 <div className="hammer">
 
                     <img className="newYork" src="../media/newyork,newyork.jpg" alt="An photograph of a beautiful woman" />
-                    <img className="confidence" src="../media/burning-bridge.png" alt="An image of a burning bridge" /> 
                     <img className="adut" src="../media/adut.jpg" alt="A photograph of beautiful woman" />
+                    <img className="confidence" src="../media/burning-bridge.png" alt="An image of a burning bridge" /> 
                 </div>
                 
                 <div className="pieceOfMind">
@@ -139,7 +148,7 @@ export default function Rorschach() {
                 <div className="sexxy">
                     <img className="surprise2" src="../media/man1.jpg" alt="A man presenting the word `POWER`" />
                     <img className="power2" src="../media/text-1723641526421.png" alt="An image of the word `POWER`" />
-                    
+                
                     <img className="power3" src="../media/text-1723724602743.png" alt="An image of the word `POWER`" /> 
                     <img className="surprise3" src="../media/lady.jpg" alt="A woman looking up towards the word `POWER`" />
                 </div>
@@ -158,12 +167,44 @@ export default function Rorschach() {
                     </form>
                 </div>
 
-                <div> 
+                <div>
 
-                    <img className="together" src="../media/economy.jpeg" alt="An image of a person making a heart with their hands" />
-                    <img className="fence" src="../media/white-fence.png" alt="An image of a white pickett fence" />
+                    <img className="lockedIn" src="../media/unbreakable-chain.jpeg" alt="An image an unbreakable chain" />
+                    <img className="arrow" src="../media/point-no-background.png" alt="An image of an arrow with points on both ends" /> 
+                   
+                </div>
+
+                <div className="here">
+
+                        <img className="humanBody" src="../media/text-1725083261005.png" alt="An image of the words `Human Body`" /> 
+
+                        <img className="spirit" src="../media/text-1725083074688.png" alt="An image of the word `Spirit` " />
 
                 </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+
+                <div className="boundary">
+
+                    <div> 
+
+                        <img className="together" src="../media/economy.jpeg" alt="An image of a person making a heart with their hands" />
+
+                    </div>
+
+                    <div className="lovely">
+
+                        <img className="fence" src="../media/white-fence.png" alt="An image of a white pickett fence" />
+                    </div>
+
+                </div>   
 
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
@@ -197,7 +238,6 @@ export default function Rorschach() {
 
                     <img className="stop" src="../media/text-1724885907102.png" alt="The phrase, `STOP WORK`" />
                     <img className="work" src="../media/text-1724885922384.png" alt="The phrase, `STOP WORK`" />
-                    {/* <img className="stop2" src="../media/text-1724885938722.png" alt="The phrase, `STOP WORK`" />  */}
                     
                     <video className="dentist" width="195" height="365" controls={false} autoPlay loop muted>
                         <source src="../media/Untitled video - Made with Clipchamp (2).mp4" type="video/mp4" />
@@ -227,12 +267,7 @@ export default function Rorschach() {
                         <button type="submit">Share</button>
                     </form>
                 </div>
-                {/* <div className="adjust">
-                    <p className="libre-barcode-39-regular" id="voice">
-                        <em><b>!!!EXTRA EXTRA!!!</b></em> READ, READ, <b>READ!!!</b> It's all very super serious to be/
-                        LOOK!! It's fascinating, this fascination, a dominant <em><b>force</b></em> to be ON TOP!!
-                    </p>
-                </div> */}
+                
                 <div id="hebrew">
                     <img id="first" src="../media/hebrew.jpg" alt="An image of the Hebrew symbol" />
                     <img id="second" src="../media/christianity.jpg" alt="An image of the Christian cross" />
@@ -257,7 +292,9 @@ export default function Rorschach() {
                     <video id="mlk" width="565" height="565" controls={false} autoPlay loop muted>
                         <source src="../media/My Movie 2.mp4" type="video/mp4" />
                     </video>
-                    <img id="cross" src="../media/earth-spin.gif" alt="A processional cross from ca.1500" />
+                    
+                    <img id="cross" src="../media/earth-spin.gif" alt="An image of the Erth spinning" />
+                    
                     <video id="shoot" width="385" height="425" controls={false} autoPlay loop muted>
                         <source src="../media/Video.mp4" type="video/mp4" />
                     </video>

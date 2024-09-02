@@ -25,7 +25,7 @@ router
             
             console.log("New user input into database!");
 
-            res.status(201).json({ message: `New User @ ${newUser}` });
+            res.status(201).json({ message: `New User @ ${username}` });
 
         } catch (error) {
 

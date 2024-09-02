@@ -18,7 +18,7 @@ router
         try {
 
             if (await bcrypt.compare(req.body.hashPassword, user.hashPassword)) {
-                res.status(200).json({message: `Welcome @ ${user}`})
+                res.status(200).json({message: `Welcome @ ${username}`})
             } else {
                 res.send("You are not authorized for that action.")
             }
