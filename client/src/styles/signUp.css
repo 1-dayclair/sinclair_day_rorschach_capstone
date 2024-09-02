@@ -3,6 +3,10 @@ html, body {
     background-color: rgba(214, 208, 200, 0.989);
 }
 
+h3 {
+    color:darkslategray;
+}
+
 /* .information {
     display: flex;
     justify-content: center;

@@ -57,6 +57,10 @@ export default function WelcomeBack() {
 
                 </div>
 
+                <div className="notice">
+                    <h3><em>Notice: Upon signing up and/or logging into the site, our system may take one to two minutes to communicate the data.</em></h3>
+                </div>
+
 
                 <div id="page">
                     <p id="book">

@@ -64,6 +64,10 @@ export default function SignUp() {
                         <button id="go">Submit</button>
                     </form>
                 </div>
+
+                <div className="info">
+                    <h3><em>Notice: Upon signing up and/or logging into the site, our system may take one to two minutes to communicate the data.</em></h3>
+                </div>
                 <div id="structureOnce">
                     <img className="building" id="structureTwice" src="../media/structure!.png" alt="The word `Structure!!` written in graffiti" />
                 </div>
