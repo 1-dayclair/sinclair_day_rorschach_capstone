@@ -9,6 +9,16 @@ html, body {
     align-items: center;
 } */
 
+@media (min-width: 250px) and (max-width: 1280px) {
+    #structureOne {
+        position: relative;
+    }
+
+    .building {
+        top: 100px;
+    }
+}
+
 #begin {
     display: flex;
     justify-content: center;

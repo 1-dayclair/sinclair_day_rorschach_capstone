@@ -65,7 +65,7 @@ export default function SignUp() {
                     </form>
                 </div>
                 <div id="structureOnce">
-                    <img id="structureTwice" src="../media/structure!.png" alt="The word `Structure!!` written in graffiti" />
+                    <img className="building" id="structureTwice" src="../media/structure!.png" alt="The word `Structure!!` written in graffiti" />
                 </div>
                 <div id="circular">
                     <p style={{ color: "darkolivegreen" }}>

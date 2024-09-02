@@ -31,3 +31,9 @@ p {
     color: lavenderblush;
 
 }
+
+@media (min-width: 50px) and (max-width: 1280px) {
+    #book {
+        width: 100%;
+    }
+}
