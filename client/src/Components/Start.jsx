@@ -24,7 +24,7 @@ export default function Start() {
 
                     </div>
                     <div className="flashingLights">
-                        <img src="../media/famous!.gif " alt="An image of flashing lights from cameras" />
+                        <img className="fame" src="../media/famous!.gif " alt="An image of flashing lights from cameras" />
                     </div>
                 </div>
             </div>
