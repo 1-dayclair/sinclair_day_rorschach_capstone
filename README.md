@@ -1,8 +1,9 @@
 ***This application is always undergoing updates***
 
-***Due to the nature of our host, please give the system some time when signing up and/or logging into the application. Our webtravellers are working diligently to feed your input into the database***
+***Notice: Upon signing up and/or logging into the site, our system may take one to two minutes to communicate the data.***
 
 ***Currently being updated***
+***The chat assistant is purposley configured to answer questions in the manner that it does***
 
 This application is an online, public, Circular, rorschach. 
 A circular is a letter or advertisement for distribution to a large number of people. 
