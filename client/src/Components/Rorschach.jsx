@@ -1,5 +1,4 @@
 import "../styles/rorschach.css";
-import MediaQuery from "react-responsive"; 
 
 export default function Rorschach() {
 
@@ -35,6 +34,28 @@ export default function Rorschach() {
                                     SHOW @WHATHAVEYOUHEARDABOUTME?   
                     </p>
                     </pre>
+                </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form action="opinions/soapbox" method="post">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit">Share</button>
+                    </form>
+                </div>
+
+                <div className="fun">
+                    <img className="mascot" src="../media/Screenshot 2024-09-06 212615.png" alt="A picture of several mascots" />
+                    <img className="ebt" src="../media/Screenshot 2024-09-06 212734.png" alt="An image of an EBT card" />
+                    <img className="lottery" src="../media/New_York_Lottery-1024x1020.png" alt="An image of the NYC lottery logo" />
+                </div>
+
+                <div className="utilities">
+                    <img className="left" src="../media/human-leg-thigh-cartoon-animation-clip-art-cartoon-leg.jpg" alt="An image of the left leg" />
+                    <img className="right" src="../media/right.jpg" alt="An image of the right leg" />
+                    <img className="arm" src="../media/rightarm.jpg" alt="An image of the right arm" />
+                    <img className="armLeft" src="../media/arms-clipart-arm-leg-2.jpg" alt="An image of the left arm" />
                 </div>
 
                 <div className="pieceOfMind">
