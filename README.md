@@ -1,6 +1,6 @@
 ***This application is always undergoing updates***
 
-***Notice: Upon signing up and/or logging into the site, our system may take one to two minutes to communicate the data.***
+***Notice: Upon signing up or logging into the site, our system may take one to five minutes to communicate the data. Patiently wait or hit enter a few times***
 
 ***Currently being updated***
 ***The chat assistant is purposley configured to answer questions in the manner that it does***
