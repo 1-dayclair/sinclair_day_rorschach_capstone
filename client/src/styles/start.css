@@ -23,6 +23,24 @@
     color: rgb(120, 47, 5);
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 640px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fame {
+        
+    }
+}
+
 .login {
     background-color: lightblue;
     border: dotted orange;
