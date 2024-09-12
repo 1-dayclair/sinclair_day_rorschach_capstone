@@ -39,7 +39,7 @@
     width: 100px;
 }
 
-@media (min-width: 344px) and (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 540px) {
     .fame {
         width: 100%;
     }
