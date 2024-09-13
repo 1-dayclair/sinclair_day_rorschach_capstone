@@ -38,6 +38,13 @@ async function main() {
 main().catch(err => console.log(err));
 // Connection^^
 
+app.use((req, res, next) => {
+    if (req.path.endsWith(".html")) {
+        res.setHeader("Content-Type", "text/html");
+    }
+    next();
+});
+
 app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("*", (req, res) => {
