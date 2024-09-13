@@ -49,10 +49,10 @@ const users = require("./routes/users");
 app.use("/users", users)
 // Routes^^
 
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
 // 404 Middleware
