@@ -44,7 +44,23 @@
     width: 100px;
 }
 
-@media (min-width: 320px) and (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 600px) {
+    .fame {
+        height: 75px;
+        width: 130px;
+    }
+
+    .buttons {
+        display: grid;
+
+    }
+}
+
+@media (min-width: 640px) {
+    .buttons {
+        display: grid;
+    }
+
     .fame {
         width: 100%;
     }
