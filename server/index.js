@@ -11,7 +11,7 @@ const PORT = 4000;
 app.use(express.json());
 
 app.use(cors({
-    origin: ["https://global-circular.onrender.com", "https://global-circular.onrender.com/signup", "https://global-circular.onrender.com/login", "https://global-circular.onrender.com/circular", "https://interglobal-circular.onrender.com"], 
+    origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com"], 
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
@@ -38,10 +38,10 @@ async function main() {
 main().catch(err => console.log(err));
 // Connection^^
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 // Routes
