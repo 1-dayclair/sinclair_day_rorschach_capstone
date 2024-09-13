@@ -22,6 +22,13 @@ app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
 // Middleware^^
 
+app.use((req, res, next) => {
+    if (req.accepts("html")) {
+        res.set("Content-Type", "text/html");
+    }
+    next();
+});
+
 // Connection
 async function main() {
     try {
@@ -57,7 +64,7 @@ app.use("/users", users)
 
 // 404 Middleware
 app.use((req, res, next) => {
-    next(new Error(404, "Resource Not Found"));
+    res.status(404).send("Resource Not Found");
 });
 // 404 Middleware^^
 
