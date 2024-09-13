@@ -42,11 +42,6 @@
         display: flex;
         justify-content: flex-end;
     }
-
-    .fame {
-        width: 85px;
-        height: 85px;
-    }
 }
 
 .login {
