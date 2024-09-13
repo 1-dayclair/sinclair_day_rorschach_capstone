@@ -56,6 +56,16 @@
     }
 }
 
+@media (min-device-width: 390px) and (max-device-width: 844px) {
+    .buttons {
+        display: grid;
+    }
+
+    .fame {
+        width: 100%;
+    }
+}
+
 @media (min-width: 640px) {
     .buttons {
         display: grid;
