@@ -1,23 +1,12 @@
 html, body {
     border: dotted deepskyblue 2px;
     background-color: rgba(214, 208, 200, 0.989);
-}
-
-@media (min-width: 50px) and (max-width: 2560px) {
-    html, body {
-        width: 100%;
-    }
+    overflow-x: hidden;
 }
 
 h3 {
     color:darkslategray;
 }
-
-/* .information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 @media (min-width: 250px) and (max-width: 1280px) {
     #structureOne {

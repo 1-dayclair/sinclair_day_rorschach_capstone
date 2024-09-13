@@ -33,14 +33,14 @@
 @media (min-width: 640px) {
     .buttons {
         display: flex;
-        justify-content: end;
+        justify-content: center;
     }
 }
 
 @media (min-width: 1170px) {
     .buttons {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 }
 
