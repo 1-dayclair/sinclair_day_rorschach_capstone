@@ -38,6 +38,12 @@ async function main() {
 main().catch(err => console.log(err));
 // Connection^^
 
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
 // Routes
 const create = require("./routes/create");
 app.use("/create", create);
@@ -48,12 +54,6 @@ app.use("/comments", comments);
 const users = require("./routes/users");
 app.use("/users", users)
 // Routes^^
-
-app.use(express.static(path.join(__dirname, "client/build")));
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
 
 // 404 Middleware
 app.use((req, res, next) => {
