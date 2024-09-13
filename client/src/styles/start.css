@@ -28,25 +28,25 @@
     justify-content: center;
 }
 
-@media (min-width: 340px) and (max-width: 600px) {
+@media (min-width: 340px) and (max-width: 2778px) {
     .buttons {
         display: flex;
         justify-content: center;
     }
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
     .buttons {
        position: relative;
     }
-}
+} */
 
-@media (min-width: 1024px) and (max-width: 2778px) {
+/* @media (min-width: 1024px) and (max-width: 2778px) {
     .buttons {
         display: flex;
         justify-content: flex-end;
     }
-}
+} */
 
 .login {
     background-color: lightblue;
