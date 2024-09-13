@@ -58,7 +58,7 @@ export default function WelcomeBack() {
                 </div>
 
                 <div className="notice">
-                    <h3><em>Notice: Upon signing up or logging into the site, our system may take one to five minutes to communicate the data. Patiently wait or hit enter a few times.</em></h3>
+                    <h3><em>Notice: Upon signing up or logging into the site, our system may take one to five minutes to communicate the data. Patiently wait or hit enter a few times or refresh and re-enter your sign-up or login data.</em></h3>
                 </div>
 
 
