@@ -288,24 +288,84 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 2560px) {
+@media (min-width: 821px) and (max-width: 1024px) {
     .fortresses {
         position: relative;
     }
 
     .pov {
         width: 200px;
-        right: 215px;
-        left: -73px;  
+        right: 200px;
+        left: -3px;
+        top: -47px;
+        /* seeThru */
     }
 
     .pov2 {
         width: 200px;
-        left: 4px;
+        left: -210px;
+        top: 100px;
+        /* blue */
     }
 
     .pov3 {
         width: 175px;
+        /* purple */
+    }
+
+    .will {
+        left: 62px;
+        top: 12px;
+    }
+
+    .will2 {
+        left: 55px;
+        bottom: 62px;
+    }
+
+    .will3 {
+        left: 55px;
+        top: 25px;
+    }
+
+    .will4 {
+        right: 100px;
+        bottom: 300px;
+        left: -134px;
+        top: -172px;
+    }
+
+    .will5 {
+        right: 115px;
+        bottom: 415px;
+        left: 100px;
+        top: -172px;
+    }    
+}
+
+@media (min-width: 1025px) and (max-width: 2559px) {
+    .fortresses {
+        position: relative;
+    }
+
+    .pov {
+        width: 200px;
+        right: 200px;
+        left: -3px;
+        top: -47px;
+        /* seeThru */
+    }
+
+    .pov2 {
+        width: 200px;
+        left: -210px;
+        top: 100px;
+        /* blue */
+    }
+
+    .pov3 {
+        width: 175px;
+        /* purple */
     }
 
     .will {
@@ -336,6 +396,62 @@
         left: 100px;
         top: -172px;
     }
+}
+
+@media (min-width: 2560px) and (max-width: 6000px) {
+    .fortresses {
+        position: relative;
+    }
+
+    .pov {
+        width: 200px;
+        right: 200px;
+        left: -3px;
+        top: -47px;
+        /* seeThru */
+    }
+
+    .pov2 {
+        width: 200px;
+        left: -100px;
+        top: 15px;
+        /* blue */
+    }
+
+    .pov3 {
+        width: 175px;
+        bottom: 20px;
+        /* purple */
+    }
+
+    .will {
+        left: 62px;
+        top: 12px;
+    }
+
+    .will2 {
+        left: 55px;
+        bottom: 62px;
+    }
+
+    .will3 {
+        left: 55px;
+        top: 25px;
+    }
+
+    .will4 {
+        right: 100px;
+        bottom: 300px;
+        left: -134px;
+        top: -172px;
+    }
+
+    .will5 {
+        right: 115px;
+        bottom: 415px;
+        left: 100px;
+        top: -172px;
+    }    
 }
 
 .couple {
@@ -522,7 +638,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 2560px ) {
+@media (min-width: 769px) and (max-width: 6000px ) {
     .security {
         position: relative;
         /* top: 715px;
@@ -670,7 +786,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 2560px) {
+@media (min-width: 1024px) and (max-width: 1620px) {
     .here {
         position: relative;
     }
@@ -680,11 +796,23 @@
         height: 200px;
         top: -345px;
         right: 551px;
-        /* left: -551px; */
+        /* left: -1000px; */
     }
 }
 
-@media (min-width: 2560px) and (max-width: 2560px) {
+@media (min-width: 1920px) and (max-width: 2000px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -767px;
+    }
+}
+
+@media (min-width: 2001px) and (max-width: 2400px) {
     .here {
         position: relative;
     }
@@ -694,6 +822,222 @@
         height: 200px;
         top: -345px;
         left: -919px;
+    }
+}
+
+@media (min-width: 2401px) and (max-width: 2560px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1010px;
+    }
+}
+
+@media (min-width: 2561px) and (max-width: 2780px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1112px;
+    }
+}
+
+@media (min-width: 2781px) and (max-width: 3000px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1200px;
+    }
+}
+
+@media (min-width: 3000px) and (max-width: 3200px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1225px;
+    }
+}
+
+@media (min-width: 3201px) and (max-width: 3400px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1300px;
+    }
+}
+
+@media (min-width: 3401px) and (max-width: 3600px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1450px;
+    }
+}
+
+@media (min-width: 3601px) and (max-width: 3800px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1530px;
+    }
+}
+
+@media (min-width: 3801px) and (max-width: 4000px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1630px;
+    }
+}
+
+@media (min-width: 4001px) and (max-width: 4200px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1700px;
+    }
+}
+
+@media (min-width: 4201px) and (max-width: 4400px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1770px;
+    }
+}
+
+@media (min-width: 4401px) and (max-width: 4600px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1840px;
+    }
+}
+
+@media (min-width: 4601px) and (max-width: 4800px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -1910px;
+    }
+}
+
+@media (min-width: 4801px) and (max-width: 5000px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2000px;
+    }
+}
+
+@media (min-width: 5001px) and (max-width: 5200px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2100px;
+    }
+}
+
+@media (min-width: 5201px) and (max-width: 5400px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2150px;
+    }
+}
+
+@media (min-width: 5401px) and (max-width: 5600px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2240px;
+    }
+}
+
+@media (min-width: 5601px) and (max-width: 5800px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2325px;
+    }
+}
+
+@media (min-width: 5801px) and (max-width: 6000px) {
+    .here {
+        position: relative;
+    }
+
+    .arrow {
+        width: 150px;
+        height: 200px;
+        left: -2325px;
     }
 }
 
@@ -837,4 +1181,82 @@
         width: 100px;
         height: 100px;
     }
+}
+
+.set {
+    display: flex;
+    justify-content: center;
+
+}
+
+.armor {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: 200px;
+}
+
+.armor2 {
+    height: 100px;
+    width: 95px;
+    border: solid 4px green;
+}
+
+.armor3 {
+    height: 100px;
+    width: 95px;
+    border: solid 4px brown
+}
+
+.heart {
+    height: 600px;
+    width: 575px;
+    border: 4px dashed blue;
+}
+
+.listen {
+    height: 200px;
+    width: 260px;
+    position: relative;
+    right: 200px;
+    top: 350px;
+}
+
+.crown {
+    height: 100px;
+    width: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 1279px) {
+    .armor {
+        height: 100px;
+        width: 150px;
+        position: relative;
+        left: 400px;
+    }
+    
+    .armor2 {
+        height: 100px;
+        width: 95px;
+        border: solid 4px green;
+        position: relative;
+        left: 400px;
+    }
+    
+    .armor3 {
+        height: 100px;
+        width: 95px;
+        border: solid 4px brown;
+        position: relative;
+        left: 400px;
+    }
+
+    .crown {
+        height: 100px;
+        width: 150px;
+        position: relative;
+        right: 400px;
+        top: 200px;
+    }
+    
 }

@@ -9,6 +9,11 @@ export default function Rorschach() {
         pac.play(); 
     };
 
+    const handleShare = (e) => {
+        alert("Your input is not needed on this one. There are some ideas that may be interested in your opinion.");
+        e.preventDefault();
+    }
+
 
     return (
         <>
@@ -38,10 +43,29 @@ export default function Rorschach() {
 
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
-                    <form action="opinions/soapbox" method="post">
+                    <form>
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
+                    </form>
+                </div>
+
+                <div className="set">
+                    <img className="armor" src="../media/image1.png" alt="An image of armor" />
+                    <img className="armor2" src="../media/IMG_7880_front_armor.jpg" alt="An image of armor" />
+                    <img className="armor3" src="../media/IMG_7879_back_armor.jpg" alt="An image of armor" />
+                    <img className="heart" src="../media/Screenshot 2024-09-14 141738.png" alt="An image of a heart" />
+                    <img className="listen" src="../media/Screenshot 2024-09-14 141652.png" alt="An image of a man listening" />
+                    <img className="crown" src="../media/image0.png" alt="An image of a crown" />
+
+                </div>
+
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form>
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -63,7 +87,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -104,7 +128,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -139,7 +163,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -155,7 +179,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
                 
@@ -184,7 +208,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -208,7 +232,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -232,7 +256,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="What do you see?" />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
                 <div className="fortresses">
@@ -251,7 +275,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="Stand atop your soapbox..." />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
 
@@ -285,7 +309,7 @@ export default function Rorschach() {
                     <form action="opinions/soapbox" method="post">
                         <input type="text" name="name" placeholder="Name" />
                         <input type="text" name="comments" placeholder="Stand atop your soapbox..." />
-                        <button type="submit">Share</button>
+                        <button type="submit" onClick={handleShare}>Share</button>
                     </form>
                 </div>
                 
