@@ -1,0 +1,15 @@
+.philosopher {
+    display: flex;
+    justify-content: center;
+}
+
+.geeez {
+    width: 200px;
+    height: 250px;
+}
+
+.mask {
+    width: 215px;
+    height: 245px;
+}
+

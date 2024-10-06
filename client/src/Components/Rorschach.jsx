@@ -1,4 +1,5 @@
 import "../styles/rorschach.css";
+import "../styles/rorschach_v2.css";
 
 export default function Rorschach() {
 
@@ -20,6 +21,11 @@ export default function Rorschach() {
             <div id="top">
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
+
+                <div className="philosopher">
+                    <img className="geeez" src="../media/geeeez.png" alt="An image of Jesus on the cross" />
+                    <img className="mask" src="../media/mask.png" alt="An image of a smiling drama mask" />
+                </div>
 
                 <div>
                     <pre>
