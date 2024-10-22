@@ -22,6 +22,34 @@ export default function Rorschach() {
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
 
+                <div className="pieceOfMind">
+                    <h6 id="thoughts">Opinions</h6>
+                    <form>
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="text" name="comments" placeholder="What do you see?" />
+                        <button type="submit" onClick={handleShare}>Share</button>
+                    </form>
+                </div>
+
+                <div>
+                    <div>
+                        <img className="forests" src="../media/forest.jpg" alt="An image of a forest" />
+                        <img className="intellectForest" src="../media/intelligence.png" alt="An image of the word, `Intelligence`" />
+                        <img className="intellectAgainForest" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
+                    </div>
+
+                    <div>
+                        <img className="intellectAgain" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
+                        <img className="intellect" src="../media/intelligence.png" alt="An image of the word, `Intelligence`" />
+                        <img className="intellectAgain" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
+                    </div>
+
+                </div>
+
+                
+
+
+
                 <div className="philosopher">
                     <img className="geeez" src="../media/geeeez.png" alt="An image of Jesus on the cross" />
                     <img className="mask" src="../media/mask.png" alt="An image of a smiling drama mask" />
