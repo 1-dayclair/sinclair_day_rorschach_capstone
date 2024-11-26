@@ -55,3 +55,18 @@
 
 }
 
+@media (min-width: 320px) and (max-width: 360px) {
+    .intellectForest {
+        width: 50%;
+        position: relative;
+        /* bottom: 200px; */
+        top: -100px;  
+    }
+    
+    .intellectAgainForest {
+        width: 50%;
+        position: relative;
+        bottom: 175px;
+        right: 25px;
+    }
+}
