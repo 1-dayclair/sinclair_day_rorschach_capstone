@@ -42,6 +42,7 @@
     width: 50%;
     position: relative;
     bottom: 175px;
+    right: 25px;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
@@ -53,3 +54,4 @@
     }
 
 }
+

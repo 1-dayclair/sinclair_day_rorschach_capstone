@@ -38,11 +38,11 @@ export default function Rorschach() {
                         <img className="intellectAgainForest" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
                     </div>
 
-                    <div>
+                    {/* <div>
                         <img className="intellectAgain" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
                         <img className="intellect" src="../media/intelligence.png" alt="An image of the word, `Intelligence`" />
                         <img className="intellectAgain" src="../media/intelligence.two.png" alt="An image of the word, `Intelligence`" />
-                    </div>
+                    </div> */}
 
                 </div>
 
