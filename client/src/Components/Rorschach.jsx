@@ -374,9 +374,9 @@ export default function Rorschach() {
                     
                     <img id="cross" src="../media/earth-spin.gif" alt="An image of the Erth spinning" />
                     
-                    <video id="shoot" width="385" height="425" controls={false} autoPlay loop muted>
+                    {/* <video id="shoot" width="385" height="425" controls={false} autoPlay loop muted>
                         <source src="../media/Video.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
                 </div>
                 <div className="fabric">
                     <img id="optimistic" src="../media/space-space.gif" alt="An image of space, where we live." />
