@@ -368,9 +368,9 @@ export default function Rorschach() {
                     <img id="river" src="../media/river.GIF" alt="A flowing river" />
                 </div>
                 <div className="cross">
-                    <video id="mlk" width="565" height="565" controls={false} autoPlay loop muted>
+                    {/* <video id="mlk" width="565" height="565" controls={false} autoPlay loop muted>
                         <source src="../media/My Movie 2.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
                     
                     <img id="cross" src="../media/earth-spin.gif" alt="An image of the Erth spinning" />
                     
