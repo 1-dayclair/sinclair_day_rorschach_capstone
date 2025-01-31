@@ -55,7 +55,7 @@ export default function Rorschach() {
                     <img className="mask" src="../media/mask.png" alt="An image of a smiling drama mask" />
                 </div>
 
-                <div>
+                {/* <div>
                     <pre>
                     <p style={{display: "inline", color: "blue", fontSize: "30px", fontWeight: "bold" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
 
@@ -73,7 +73,7 @@ export default function Rorschach() {
                                     SHOW @WHATHAVEYOUHEARDABOUTME?   
                     </p>
                     </pre>
-                </div>
+                </div> */}
 
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
