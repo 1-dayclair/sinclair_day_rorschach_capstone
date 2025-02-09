@@ -55,26 +55,6 @@ export default function Rorschach() {
                     <img className="mask" src="../media/mask.png" alt="An image of a smiling drama mask" />
                 </div>
 
-                {/* <div>
-                    <pre>
-                    <p style={{display: "inline", color: "blue", fontSize: "30px", fontWeight: "bold" }}>MORALLY STRATEGIC, JEAN MICHEL BASQIAUT &  AND RICHARD PRYOR TAKE A PHOTO, TOGETHER!!,
-
-                        MARJELLY IS A #FAST-PACED METROPOLITAN MUSEUM. !!!ACTIVELY SCOURING COMPANY LOGS FOR SECRETS!!! BIG
-                            BIG BUSINESS DISCOVERS IMMORTALITY! ______THIS JUST IN!! HIS DAUGHTER'S NAME IS PANTHER
-                HIS SON'S NAME'S IMMACULATE...THERE'S A PIMP AND HIS H@%, "BABY, YOU GOTTA WATCH OUT FOR THAT OPEN-HAND, 
-                                    ---***BLAOWWW!!!!***--- HOOK!" #ART-WORLD FETISH-MONGERERS, BEWARE!! 
-                                    I REPEAT!! CANNABALIZE YOUR LANDLORD!! AND YOUR DELI MAN!! THEY MAKE MONEY 
-                        EXPENSIVE? ROMANCE OF TAXES!! PARASITES IN HIS FISH!!! PARASITES IN HIS SUPER FISH, PARASITES IN 
-                                        HIS SUPERFICIAL, SUPERFICIAL, SUPERFICIAL SUPREMACY!! PLEASURE FOREVER, PLEASURE 4EVER 
-                                TODAY'S BUDDHA MAN. GIVE ME A SECOND TO DOWNLOAD MY EGO... YOUR EGO IS CONNECTED SIRE. 
-                    THERE'S A LARGE LAAARGE MAJOR CRIME SYNDICATE AT LARGE AND THEY ARE MASTERS OF PROFESSIONALISM 
-                                ALL HE HAS IS HIS SENSES, AND ALONG WITH HIS SENTIMENT, BOOM!! HE'S POSSESSED BY ONE
-                                                OF THE WILLS THAT COLLECTS RECONNAISSANCE AGAINST THE FORTRE$$ ;) STAY TUNED FOR HIS NEXT
-                                    SHOW @WHATHAVEYOUHEARDABOUTME?   
-                    </p>
-                    </pre>
-                </div> */}
-
                 <div className="pieceOfMind">
                     <h6 id="thoughts">Opinions</h6>
                     <form>
