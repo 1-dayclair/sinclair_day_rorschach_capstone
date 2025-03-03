@@ -70,3 +70,21 @@
         right: 25px;
     }
 }
+
+#oldFashion {
+    height: 80px;
+    width: 300px;
+    color: blue;
+    border: dashed 4px saddlebrown; 
+    transform: translateY(-12px);
+}
+
+#oldFashion:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.magazine {
+    display: flex;
+    justify-content: center;
+}

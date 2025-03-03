@@ -1,7 +1,18 @@
 import "../styles/rorschach.css";
 import "../styles/rorschach_v2.css";
+import { useState } from "react";
+import WorldTalks from "./Book"; 
+
+
+
 
 export default function Rorschach() {
+
+    const [issue, setIssue] = useState("notRead");
+
+    const handleClick = () => {
+        setIssue(issue === "notRead" ? "read" : "notRead");
+    };
 
     const pac = new Audio("../media/Untitled video - Made with Clipchamp (1).mp4");
 
@@ -18,6 +29,7 @@ export default function Rorschach() {
 
     return (
         <>
+
             <div id="top">
                 <h2 id="headline">CIRCULAR!</h2>
                 <h6 id="reasoning">Rorschach</h6>
@@ -29,6 +41,12 @@ export default function Rorschach() {
                         <input type="text" name="comments" placeholder="What do you see?" />
                         <button type="submit" onClick={handleShare}>Share</button>
                     </form>
+                </div>
+
+                <div>
+                <button id="oldFashion" onClick={handleClick}>
+                     Click Me: World Talks! Issue #1 </button>
+                     {issue === "read" && <WorldTalks/>}
                 </div>
 
                 <div>

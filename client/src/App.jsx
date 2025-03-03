@@ -4,6 +4,7 @@ import Start from './Components/Start';
 import SignUp from "./Components/SignUp";
 import WelcomeBack from "./Components/WelcomeBack";
 import Rorschach from './Components/Rorschach';
+import Book from "./Components/Book";
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/login" element={<WelcomeBack />} />
                 <Route path="/circular" element={<Rorschach />} />
+
 
             </Routes>
         </>
