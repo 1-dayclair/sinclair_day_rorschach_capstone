@@ -1,18 +1,18 @@
 import "../styles/rorschach.css";
 import "../styles/rorschach_v2.css";
-import { useState } from "react";
-import WorldTalks from "./Book"; 
+// import { useState } from "react";
+// import WorldTalks from "./Book"; 
 
 
 
 
 export default function Rorschach() {
 
-    const [issue, setIssue] = useState("notRead");
+    // const [issue, setIssue] = useState("notRead");
 
-    const handleClick = () => {
-        setIssue(issue === "notRead" ? "read" : "notRead");
-    };
+    // const handleClick = () => {
+    //     setIssue(issue === "notRead" ? "read" : "notRead");
+    // };
 
     const pac = new Audio("../media/Untitled video - Made with Clipchamp (1).mp4");
 

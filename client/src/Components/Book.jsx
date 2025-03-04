@@ -1,6 +1,6 @@
 // import React from "react";
 // import HTMLFlipBook from "react-pageflip"; 
-// import "../styles/rorschach_v2.css";
+import "../styles/rorschach_v2.css";
 
 // function WorldTalks() {
 //     return (
