@@ -2,13 +2,13 @@ import "../styles/rorschach.css";
 import "../styles/rorschach_v2.css";
 import { useState } from "react";
 import WorldTalks from "./Book"; 
-
-
+import HitMe from "./Talk"; 
 
 
 export default function Rorschach() {
 
     const [issue, setIssue] = useState("notRead");
+    const [stage, setStage] = useState(false);
 
     const handleClick = () => {
         setIssue(issue === "notRead" ? "read" : "notRead");
@@ -24,8 +24,11 @@ export default function Rorschach() {
     const handleShare = (e) => {
         alert("Your input is not needed on this one. There are some ideas that may be interested in your opinion.");
         e.preventDefault();
-    }
+    };
 
+    const spotLight = () => {
+        setStage((prev) => !prev);
+    };
 
     return (
         <>
@@ -43,9 +46,18 @@ export default function Rorschach() {
                     </form>
                 </div>
 
+                <div className="clarity">
+                    <button className="inABottle" onClick={spotLight}>
+                        <img className="classical" src="../media/signal.png" alt="An image of sound entering the ear and then travelling into the brain"/>
+                    </button>
+                    <HitMe/>    
+                </div>
+
+
+
                 <div>
                 <button id="oldFashion" onClick={handleClick}>
-                     Click Me: World Talks! Issue #1 </button>
+                     Click Me: World Talks! Issue #1 debut coming soon... </button>
                      {issue === "read" && <WorldTalks/>}
                 </div>
 

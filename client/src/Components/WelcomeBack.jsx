@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "./Father";
 import "../styles/welcomeBack.css";
 
 export default function WelcomeBack() {
 
     const [person, setPerson] = useState({ username: "", hashPassword: "" });
+    const { setCurrentUser } = useUser();
 
     function handleChange(e) {
         const { name, value } = e.target;

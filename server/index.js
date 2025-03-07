@@ -1,4 +1,6 @@
 const express = require("express");
+const http = require("http");
+const { Server } = require("socket.io");
 require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -6,7 +8,18 @@ const path = require("path");
 const cors = require("cors"); 
 
 const app = express();
+const server = http.createServer(app);
+const io = new Server(server);
 const PORT = 4000;
+
+io.on("connection", (socket) => {
+    console.log("A user connected!");
+
+    socket.on("disconnect", () => {
+        console.log("A user disconnected :(");
+    });
+});
+
 
 app.use(express.json());
 
@@ -59,7 +72,10 @@ const comments = require("./routes/comments");
 app.use("/comments", comments);
 
 const users = require("./routes/users");
-app.use("/users", users)
+app.use("/users", users);
+
+const communication = require("./routes/communication");
+app.use("/communication", communication);
 // Routes^^
 
 // 404 Middleware

@@ -84,6 +84,22 @@
     color: black;
 }
 
+.classical {
+    width: 500px;
+    height: 145px;
+    border: 2mm ridge silver ;
+}
+
+.classical:hover {
+    background-color: rgba(176, 73, 202, 0.29);
+}
+
+/* .clarity {
+    width: 150px;
+    border: dotted 4px blue;
+    transition: "transform 0.2s";
+} */
+
 /* .magazine {
     display: flex;
     justify-content: center;
