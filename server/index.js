@@ -9,7 +9,14 @@ const cors = require("cors");
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+    cors: {
+        origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com"], 
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        credentials: true,
+    },
+});
+
 const PORT = 4000;
 
 io.on("connection", (socket) => {
