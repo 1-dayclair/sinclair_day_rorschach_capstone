@@ -5,7 +5,7 @@ import { useUser } from "./Father";
 import {io} from "socket.io-client";
 
 const socket = io("https://interglobal-circular.onrender.com", {
-    transports: ["websocket", "polling"], 
+    transports: ["websocket"], 
 });
 
 const HitMe = () => {
