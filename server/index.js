@@ -1,5 +1,5 @@
 const express = require("express");
-const https = require("https");
+const http = require("http");
 const { Server } = require("socket.io");
 require("dotenv").config();
 const mongoose = require("mongoose");
@@ -9,7 +9,7 @@ const cors = require("cors");
 
 const app = express();
 
-const server = https.createServer(app);
+const server = http.createServer(app);
 
 
 
@@ -19,7 +19,7 @@ const io = new Server(server, {
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     },
-    allowEIO3: false,
+    allowEIO3: true,
     transports: ["websocket", "polling"],
 });
 
