@@ -4,7 +4,9 @@ import { useEffect } from "react";
 import { useUser } from "./Father";
 import {io} from "socket.io-client";
 
-const socket = io("https://interglobal-circular.onrender.com");
+const socket = io("https://interglobal-circular.onrender.com", {
+    transports: ["websocket", "polling"], 
+});
 
 const HitMe = () => {
     const { currentUser } = useUser();
@@ -35,7 +37,7 @@ const handleSubmit = async (e) => {
 
     try {
         const response = await fetch("https://interglobal-circular.onrender.com", {
-            method: "POST",
+            method: ["GET","POST", "PUT", "PATCH", "DELETE"],
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newMessage),
         });

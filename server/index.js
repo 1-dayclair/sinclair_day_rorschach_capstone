@@ -1,5 +1,5 @@
 const express = require("express");
-const http = require("http");
+const https = require("https");
 const { Server } = require("socket.io");
 require("dotenv").config();
 const mongoose = require("mongoose");
@@ -8,13 +8,19 @@ const path = require("path");
 const cors = require("cors"); 
 
 const app = express();
-const server = http.createServer(app);
+
+const server = https.createServer(app);
+
+
+
 const io = new Server(server, {
     cors: {
-        origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com"], 
+        origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com", "https://localhost:5173"], 
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     },
+    allowEIO3: false,
+    transports: ["websocket", "polling"],
 });
 
 const PORT = 4000;
@@ -31,7 +37,7 @@ io.on("connection", (socket) => {
 app.use(express.json());
 
 app.use(cors({
-    origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com"], 
+    origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com", "https://localhost:5173"], 
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
