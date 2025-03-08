@@ -9,28 +9,32 @@ const cors = require("cors");
 
 const app = express();
 
+const PORT = 4000;
+
 const server = http.createServer(app);
-
-
 
 const io = new Server(server, {
     cors: {
-        origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com", "https://localhost:5173"], 
+        origin: ["https://global-circular.onrender.com", "https://interglobal-circular.onrender.com", "http://localhost:5173"], 
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     },
-    allowEIO3: true,
+    allowEIO3: false,
     transports: ["websocket", "polling"],
     path: "/socket.io",
 });
 
-const PORT = 4000;
+console.log("Websocket server is running on path: /socket.io")
 
 io.on("connection", (socket) => {
     console.log("A user connected!");
 
     socket.on("disconnect", () => {
         console.log("A user disconnected :(");
+    });
+
+    socket.on("message", (data) => {
+        console.log("Message recieved from client: ", data);
     });
 });
 

@@ -10,7 +10,11 @@ const HitMe = () => {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
+
+        if(!currentUser) return; 
+
         const socket = io("https://interglobal-circular.onrender.com", {
+            path: "/socket.io",
             transports: ["websocket"], 
         });
 
@@ -18,11 +22,15 @@ const HitMe = () => {
             setMessages((prevMessages) => [...prevMessages, newMessage]);
         });
 
+        socket.on("disconnect", () => {
+            console.log("Disconnected from WebSocket server :(");
+        });
+
         return () => {
             socket.off("newMessage");
             socket.disconnect();
         };
-}, []);
+}, [currentUser]);
 
 const handleSubmit = async (e) => {
     e.preventDefault();
