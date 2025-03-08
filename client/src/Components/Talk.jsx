@@ -4,22 +4,23 @@ import { useEffect } from "react";
 import { useUser } from "./Father";
 import {io} from "socket.io-client";
 
-const socket = io("https://interglobal-circular.onrender.com", {
-    transports: ["websocket"], 
-});
-
 const HitMe = () => {
     const { currentUser } = useUser();
     const [messages, setMessages] = useState([]);
     const [message, setMessage] = useState("");
 
     useEffect(() => {
+        const socket = io("https://interglobal-circular.onrender.com", {
+            transports: ["websocket"], 
+        });
+
         socket.on("newMessage", (newMessage) => {
             setMessages((prevMessages) => [...prevMessages, newMessage]);
         });
 
         return () => {
             socket.off("newMessage");
+            socket.disconnect();
         };
 }, []);
 
@@ -37,7 +38,7 @@ const handleSubmit = async (e) => {
 
     try {
         const response = await fetch("https://interglobal-circular.onrender.com", {
-            method: ["GET","POST", "PUT", "PATCH", "DELETE"],
+            method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newMessage),
         });
